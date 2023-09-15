@@ -1,0 +1,5 @@
+2023-09-15 23:49:22,493:ERROR:error:'NoneType' object has no attribute 'close'
+Traceback (most recent call last):
+  File "logo_flash_main.py", line 872, in closeEvent
+    self.serial.close()
+AttributeError: 'NoneType' object has no attribute 'close'
