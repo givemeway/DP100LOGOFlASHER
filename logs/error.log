@@ -1,5 +1,5 @@
-2023-09-21 13:28:23,090:ERROR:error:'MainApp' object has no attribute 'threadPool'
+2023-09-21 15:09:27,960:ERROR:error:'NoneType' object has no attribute 'close'
 Traceback (most recent call last):
-  File "logo_flash_main.py", line 946, in closeEvent
-    self.threadPool.clear()
-AttributeError: 'MainApp' object has no attribute 'threadPool'
+  File "logo_flash_main.py", line 945, in closeEvent
+    self.serial.close()
+AttributeError: 'NoneType' object has no attribute 'close'
