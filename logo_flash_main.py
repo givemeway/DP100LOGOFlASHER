@@ -1,7 +1,7 @@
 import PyQt5
 from PyQt5.QtWidgets import QMainWindow,QApplication,QListWidgetItem,QFileDialog,QMessageBox
 from PyQt5.QtGui import QPixmap,QMovie
-from PyQt5.QtCore import QObject,pyqtSlot,pyqtSignal,QRunnable,QThreadPool,Qt,QMutex,QWaitCondition
+from PyQt5.QtCore import QObject,pyqtSlot,pyqtSignal,QRunnable,QThreadPool,Qt,QMutex,QWaitCondition,QMutexLocker
 from PyQt5 import QtCore,QtWidgets,QtGui
 from logo_flash_ui import Ui_MainWindow
 import sys,os, serial,time,crc8
@@ -12,12 +12,31 @@ import numpy as np
 from writeCFile import writeCFile
 from serial.tools import list_ports
 from logs import fileTransfer,error,printCommand,sendCommand,imageConvert
-import csv
+import csv,winsound
 #scale with high DPI
 QApplication.setAttribute(QtCore.Qt.AA_EnableHighDpiScaling)
 QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps)
 ################################################################################################
 
+OK = "OK"
+TIMEOUT = "TIMEOUT"
+ERROR = "ERROR"
+SUCCESS ="SUCCESS"
+READY = "READY"
+FAIL = "FAIL"
+DELETE_ACK = "1C1600"
+CHUNK_SUCCESS = "1C5100"
+CHUNK_LOGO_INDEX_UNAVAILABLE = "1C5101"
+CHUNK_LOGO_EXISTS = "1C5102"
+CHUNK_LOGO_INDEX_INVALID = "1C5103"
+CHUNK_LOGO_WRITE_ERROR = "1C5104"
+CHUNK_LOGO_GENERIC_ERROR = "1C5105"
+
+def get_path(file):
+    if hasattr(sys, "_MEIPASS"):
+        return os.path.join(sys._MEIPASS, file)
+    else:
+        return file
 
 class ComWorkerFlashSignals(QObject):
     serial_available = pyqtSignal(object)
@@ -102,7 +121,7 @@ class pushCommand(QRunnable):
                     msg = f"{response}"
                     self.signals.response.emit(msg)
             elif isinstance(ok,bool):
-                msg = f"FIRMWARE mode Response Timed out"
+                msg = "TIMEOUT"
                 self.signals.response.emit(msg)
             elif isinstance(ok,str):
                 msg = f"{ok} Aborting!"
@@ -153,15 +172,15 @@ class pushCommand(QRunnable):
                 if self.timeout:
                     if (time.time() - start) > self.timeout:
                         return True
-            return "Port closed"
+            return "PORT_CLOSED"
         except Exception as e:
             error.exception(e)
             return e
 
 class fileTransferSignals(QObject):
     progress = pyqtSignal(float)
-    finished = pyqtSignal()
-    response = pyqtSignal(str)
+    finished = pyqtSignal(tuple)
+    response = pyqtSignal(tuple)
     error    = pyqtSignal(tuple)
 
 class File:
@@ -212,12 +231,12 @@ class File:
                         file_offset += self.chunk
 
                         msg = f"{datetime.now()} : Client==> Baud Rate - {self.ser.baudrate}"
-                        self.signals.response.emit(msg)
+                        self.signals.response.emit((msg,OK))
                         self.ser.flush()
                         self.ser.write(bytes.fromhex(fimware_data_command))
                         self.ser.flush()
                         msg = f"{datetime.now()} : Client==> Chunk - {chunk_no} Sent"
-                        self.signals.response.emit(msg)
+                        self.signals.response.emit((msg,OK))
 
                         ok = self.awaitResponse()
                         if isinstance(ok,bytes):
@@ -225,7 +244,7 @@ class File:
                                 str_value = ok.decode('ASCII') 
                                 if str_value ==  "OK":
                                     msg = f"{datetime.now()} : Device==> Response: {str_value}"
-                                    self.signals.response.emit(msg)
+                                    self.signals.response.emit((msg,OK))
                                     bytes_sent += len(data)
                                     per_sent = (bytes_sent/self.size)*100
                                     self.signals.progress.emit(per_sent)
@@ -237,45 +256,45 @@ class File:
                                     
                                 elif str_value == "CRC ERROR":
                                     msg = f"{datetime.now()} : Device==> Response: {str_value} | \
-                                            Aborting File Transfer! | chunk {chunk_no}"
-                                    self.signals.response.emit(msg)
+                                            Aborting File Transfer! | chunk {chunk_no} | {str_value}"
+                                    self.signals.error.emit((msg,ERROR))
                                     return False
 
                                 elif str_value == "ERROR":
                                     msg = f"{datetime.now()} : Device==> Response: {str_value} | \
-                                            Aborting File Transfer! | chunk {chunk_no}"
-                                    self.signals.response.emit(msg)
+                                            Aborting File Transfer! | chunk {chunk_no} | {str_value}"
+                                    self.signals.error.emit((msg,ERROR))
                                     return False
 
                                 else:
                                     msg = f"{datetime.now()} : Device==> Response: {str_value} | \
-                                            Aborting File Transfer! | chunk {chunk_no}"
-                                    self.signals.response.emit(msg)
+                                            Aborting File Transfer! | chunk {chunk_no} | {str_value}"
+                                    self.signals.error.emit((msg,ERROR))
                                     return False
 
                             except Exception as e:
                                 msg = f"{datetime.now()} : Device==> Response: {ok} | \
                                         Aborting File Transfer! | chunk {chunk_no} | {e}"
-                                self.signals.response.emit(msg)
+                                self.signals.error.emit((msg,ERROR))
                                 error.exception(e)
                                 return False
 
                         elif isinstance(ok,bool):
                             msg = f"{datetime.now()} : Client==> Response Timed out | \
                                             Aborting File Transfer! | chunk {chunk_no}"
-                            self.signals.response.emit(msg)
+                            self.signals.error.emit((msg,TIMEOUT))
                             return False
 
                         elif isinstance(ok,Exception):
                             msg = f"{datetime.now()} : Device==> Something Went Wrong! | \
                                     Aborting File Transfer! | chunk {chunk_no} | {ok}"
-                            self.signals.response.emit(msg)
+                            self.signals.error.emit((msg,ERROR))
                             return ok
                         
                         elif isinstance(ok,str):
                             msg = f"{datetime.now()} : Client==> {ok} | \
                                             Aborting File Transfer! | chunk {chunk_no}"
-                            self.signals.response.emit(msg)
+                            self.signals.error.emit((msg,ERROR))
                             return False
                     else:
                         break
@@ -287,7 +306,7 @@ class File:
         except Exception as e:
             msg = f"{datetime.now()} : Device==> Something Went Wrong! | \
                     Aborting File Transfer! | chunk {chunk_no} | {e}"
-            self.signals.response.emit(msg)
+            self.signals.error.emit((msg,ERROR))
             error.exception(e)
             return e
 
@@ -318,6 +337,21 @@ class File:
             error.exception(e)
             return e
 
+class WindowSoundSignals(QObject):
+    finished = pyqtSignal()
+
+class WindowSoundWorker(QRunnable):
+    def __init__(self,file):
+        super().__init__()
+        self.file = file
+        self.signals = WindowSoundSignals()
+        
+    @pyqtSlot()
+    def run(self):
+        winsound.PlaySound(self.file,winsound.SND_ALIAS)
+        self.signals.finished.emit()
+
+
 class fileTransferWorker(QRunnable):
     def __init__(self,ser,file,delay=0,timeout=10,chunk=512):
         super().__init__()
@@ -341,22 +375,24 @@ class fileTransferWorker(QRunnable):
                     )
 
         msg = f"{datetime.now()} : Client==> Initiating File Tansfer!"
-        self.signals.response.emit(msg)
+        self.signals.response.emit((msg,""))
         response = file.fileTransfer()
         if isinstance(response,bool):
             if response:
                 msg = f"{datetime.now()} : Client==> File Transfer Success"
-                self.signals.response.emit(msg)
-                                        
+                # self.signals.response.emit((msg,SUCCESS))
+                self.signals.finished.emit((msg,SUCCESS))
             else:
                 msg = f"{datetime.now()} : Client==> File Transfer Failed!"
-                self.signals.response.emit(msg)
+                # self.signals.error.emit((msg,ERROR))
+                self.signals.finished.emit((msg,FAIL))
 
         elif isinstance(response,Exception):
             msg = f"{datetime.now()} : Client==> File Transfer Failed! | {response}"
-            self.signals.response.emit(msg)
-
-        self.signals.finished.emit()
+            self.signals.finished.emit((msg,FAIL))
+        else:
+            msg = f"{datetime.now()} : Client==> File Transfer Failed! | {response}"
+            self.signals.finished.emit((msg,FAIL))
 
 
 # ###########################################################################################
@@ -467,7 +503,7 @@ class ImageConvertWorker(QRunnable):
         self.wait.wakeOne()
 
 class bulkTransferSignals(QObject):
-    finished = pyqtSignal()
+    finished = pyqtSignal(str)
     imgStart = pyqtSignal(tuple)
     progress = pyqtSignal(tuple)
     error    = pyqtSignal(tuple)
@@ -479,9 +515,12 @@ class bulkTransferWorker(QRunnable):
         self.signals = bulkTransferSignals()
         self.mutex = QMutex()
         self.wait = QWaitCondition()
+        self.transfer_failed = False
     def run(self):
         count = 0
         for image,idx_ref in self.Images:
+            if self.transfer_failed:  
+                break  
             self.signals.imgStart.emit((image,idx_ref))
             self.mutex.lock()
             self.wait.wait(self.mutex)
@@ -489,11 +528,16 @@ class bulkTransferWorker(QRunnable):
             count += 1
             pbar = ceil(count/len(self.Images)*100)
             self.signals.progress.emit((count,pbar,len(self.Images)))
-
-        self.signals.finished.emit()
+        if self.transfer_failed:
+            self.signals.finished.emit(FAIL)
+        else:
+            self.signals.finished.emit(SUCCESS)
 
     def wake(self):
         self.wait.wakeOne()
+
+    def fail(self):
+        self.transfer_failed = True
 
 class CsvExtractorSignals(QObject):
     lines = pyqtSignal(object)
@@ -636,7 +680,7 @@ class PrinterWorker(QRunnable):
             return e
 
 class WriteWorkerSignals(QObject):
-    finished = pyqtSignal()
+    finished = pyqtSignal(str)
     progress = pyqtSignal(tuple)
     response = pyqtSignal(tuple)
     error    = pyqtSignal(tuple)
@@ -651,17 +695,19 @@ class WriteWorker(QRunnable):
         self.chunkResponseCodes = [
                                     "1C5100","1C5101",
                                     "1C5102","1C5103",
-                                    "1C5104","1C5105"
+                                    "1C5104","1C5105",
+                                    "1C1600"
                                 ]
     @pyqtSlot()
-    def run(self):
+    def run(self): 
+        status = ""
         # Check whether Image Chunks
         if isinstance(self.data,list):
-            self.transfer_logo_file()
+            status = self.transfer_logo_file()
         # or Command
         elif isinstance(self.data,str):
             self.send_command()
-        self.signals.finished.emit()
+        self.signals.finished.emit(status)
 
     def transfer_logo_file(self):
         try:
@@ -680,48 +726,48 @@ class WriteWorker(QRunnable):
                 if isinstance(self.response,bool):
                     fileTransfer.debug(f"Response Timed Out for {sentBytes} Bytes Sent")
                     msg = f"{datetime.now()} : Device==> Response Timed Out | Chunk {idx} |"
-                    self.signals.response.emit((msg,"",0))
-                    break
+                    self.signals.response.emit((msg,TIMEOUT,0))
+                    return TIMEOUT
 
                 elif isinstance(self.response,bytes):
                     self.response = self.response.hex().upper()
                     fileTransfer.debug(f"Response : {self.response}")
 
-                    if self.response == self.chunkResponseCodes[0]:
+                    if self.response == CHUNK_SUCCESS:
                         msg = f"{datetime.now()} : Device==> Response : SUCCESS"
-                        self.signals.response.emit((msg,'',len(chunk)-10))
+                        self.signals.response.emit((msg,CHUNK_SUCCESS,len(chunk)-10))
                         idx = idx+1
 
-                    elif self.response == self.chunkResponseCodes[1]:
+                    elif self.response == CHUNK_LOGO_INDEX_UNAVAILABLE:
                         msg = f"{datetime.now()} : Device==> Response : LOGO INDEX UNAVAILABLE"
-                        self.signals.response.emit((msg,'',0))
-                        break
+                        self.signals.response.emit((msg,CHUNK_LOGO_INDEX_UNAVAILABLE))
+                        return FAIL
 
-                    elif self.response == self.chunkResponseCodes[2]:
+                    elif self.response == CHUNK_LOGO_EXISTS:
                         msg = f"{datetime.now()} : Device==> Response : LOGO ID ALREADY EXISTS"
-                        self.signals.response.emit((msg,'',0))
-                        break
+                        self.signals.response.emit((msg,CHUNK_LOGO_EXISTS))
+                        return FAIL
 
-                    elif self.response == self.chunkResponseCodes[3]:
+                    elif self.response == CHUNK_LOGO_INDEX_INVALID:
                         msg = f"{datetime.now()} : Device==> Response : LOGO INVALID INDEX"
-                        self.signals.response.emit((msg,'',0))
-                        break
+                        self.signals.response.emit((msg,CHUNK_LOGO_INDEX_INVALID))
+                        return FAIL
 
-                    elif self.response == self.chunkResponseCodes[4]:
+                    elif self.response == CHUNK_LOGO_WRITE_ERROR:
                         msg = f"{datetime.now()} : Device==> Response : LOGO WRITE ERROR"
-                        self.signals.response.emit((msg,'',0))
-                        break
+                        self.signals.response.emit((msg,CHUNK_LOGO_WRITE_ERROR))
+                        return FAIL
 
-                    elif self.response == self.chunkResponseCodes[5]:
+                    elif self.response == CHUNK_LOGO_GENERIC_ERROR:
                         msg = f"{datetime.now()} : Device==> Response : LOGO GENERIC ERROR"
-                        self.signals.response.emit((msg,'',0))
-                        break
+                        self.signals.response.emit((msg,CHUNK_LOGO_GENERIC_ERROR))
+                        return FAIL
 
                 else:
                     msg = f"{datetime.now()} : Device==> Response : {self.response} | Aborting Transfer!"
-                    self.signals.response.emit((msg,'',0))
-                    break
-
+                    self.signals.response.emit((msg,self.response))
+                    return FAIL
+            return SUCCESS
         except Exception as e:
             error.exception(f"{e}")
             self.signals.error.emit(("",e))
@@ -737,16 +783,16 @@ class WriteWorker(QRunnable):
             if isinstance(response,bool):
                 sendCommand.debug(f"Response - Timed Out | Sent {self.data}")
                 msg = f"{datetime.now()} : Device==> Response - Timed Out | Sent {self.data}"
-                self.signals.response.emit((msg,"",0))
+                self.signals.response.emit((msg,TIMEOUT))
             elif isinstance(response,bytes):
                 response = response.hex().upper()
                 sendCommand.debug(f"Response : {response} | Sent {self.data}")
                 msg = f"{datetime.now()} : Device==> Response : {response} | Sent {self.data}"
-                self.signals.response.emit((msg,"",0))
+                self.signals.response.emit((msg,response))
             else:
                 sendCommand.debug(f"{response} for {sentBytes} Bytes Sent")
                 msg = f"{datetime.now()} : Device==> Error : {response} | Sent {self.data}"
-                self.signals.response.emit((msg,"",0))
+                self.signals.response.emit((msg,response))
         except Exception as e:
             error.exception(f"{e}")
             self.signals.error.emit((self.data,e))
@@ -792,7 +838,7 @@ class MainApp(QMainWindow):
         self.ui.isBulkTransferButton.clicked.connect(self.toggleBulkTransfer)
 
         self.ui.comboBox_2.activated.connect(self.select_port)
-        self.ui.comboBox.activated.connect(self.selected_baud_rate)
+        self.ui.comboBox.activated.connect(lambda: self.selected_baud_rate(self.ui.comboBox))
 
         self.ui.label_3.setHidden(True)
         
@@ -825,16 +871,18 @@ class MainApp(QMainWindow):
         ################################################################################
 
         self.set_com_buttons(False)
-        self.ui.pushButton_15.clicked.connect(self.refresh_com_port_flash)
-        self.ui.pushButton_12.clicked.connect(self.init_com_connection_worker)
-        self.ui.pushButton_13.clicked.connect(self.set_baudrate_on_connected_port)
-        self.ui.pushButton_14.clicked.connect(self.close_port)
+        self.ui.pushButton_15.clicked.connect(self.refresh_com_port)
+        self.ui.pushButton_12.clicked.connect(self.connect_to_com_port)
+        self.ui.pushButton_13.clicked.connect(self.config_baud_rate)
+        self.ui.pushButton_14.clicked.connect(self.close)
         self.ui.pushButton_16.clicked.connect(lambda: self.select_bin_file('bin.log'))
         self.ui.pushButton_17.clicked.connect(self.send_file_worker)
         self.ui.pushButton_19.clicked.connect(lambda: self.clear_console(self.ui.listWidget_2))
         self.ui.pushButton_18.clicked.connect(self.send_command_flash)
+        self.ui.initiateButton.clicked.connect(self.automate)
 
-        self.ui.comboBox_3.activated.connect(self.update_selected_port)
+        self.ui.comboBox_3.activated.connect(self.select_port)
+        self.ui.comboBox_4.activated.connect(lambda: self.selected_baud_rate(self.ui.comboBox_4))
         self.ui.pushButton_12.setEnabled(False)
         self.ui.groupBox.setHidden(True)
         # Default for progress bar 0 - 100. Set precision to 2 decimal places. Multiply by 100
@@ -845,12 +893,24 @@ class MainApp(QMainWindow):
         self.selected_port = None
         self.serial = None
         self.file = None
+        self.BinFile = None
         self.baudrate = None
         self.timeout = 0
         self.delay = 0.1
         self.chunksize = 8192
         self.ports = []
         self.baudrate_list = []
+
+        self.flashBaudRate = 115200
+        self.logoBaudRate = 19200
+        self.init = True
+        self.ready = False
+        self.automateTask = False
+        self.isDeleteCMD = False
+        self.isLogoCMD = False
+        self.isManualCMD = False
+        self.logoFailedCount = 0
+        self.logoTransferCount = 0
 
         self.fileTransferGif = QMovie(":/gifs/gifs/Blocks-1s-31px.gif")
         self.ui.label.setMovie(self.fileTransferGif)
@@ -912,9 +972,9 @@ class MainApp(QMainWindow):
         '''
         try:
             if not os.path.exists(file):
-                self.file = QFileDialog.getOpenFileName(self,msg," ",ext)
+                self.BinFile = QFileDialog.getOpenFileName(self,msg," ",ext)
                 with open(file,'wb') as f:
-                    f.write(bytes(os.path.dirname(self.file[0]),'utf-8'))
+                    f.write(bytes(os.path.dirname(self.BinFile[0]),'utf-8'))
             else:
                 with open(file,'rb') as f:
                     dir = f.read().decode('utf-8')
@@ -922,31 +982,31 @@ class MainApp(QMainWindow):
                         dir = dir
                     else:
                         dir = " "
-                self.file = QFileDialog.getOpenFileName(self,msg,dir,ext) 
-                if len(self.file[0])>0:
+                self.BinFile = QFileDialog.getOpenFileName(self,msg,dir,ext) 
+                if len(self.BinFile[0])>0:
                     with open(file,'wb') as f:
-                            f.write(bytes(os.path.dirname(self.file[0]),'utf-8'))
+                            f.write(bytes(os.path.dirname(self.BinFile[0]),'utf-8'))
         except Exception as e:
             msg = f"{datetime.now()} : Client==> {e}"
             self.log_event(self.ui.listWidget_2,msg)
             error.exception(e)
 
-        if not len(self.file[0]):
+        if not len(self.BinFile[0]):
             msg = f"{datetime.now()} : Client==> No file Selected!"
             self.log_event(self.ui.listWidget_2,msg)
             self.ui.pushButton_17.setEnabled(False)
             self.ui.pushButton_18.setEnabled(False)
         else:
             try:
-                self.ui.label_4.setText(self.file[0])
-                msg = f"{datetime.now()} : Client==> Bin file selected: {self.file[0]}"
+                self.ui.label_4.setText(self.BinFile[0])
+                msg = f"{datetime.now()} : Client==> Bin file selected: {self.BinFile[0]}"
                 self.log_event(self.ui.listWidget_2,msg)
 
-                self._size = os.path.getsize(self.file[0])
+                self._size = os.path.getsize(self.BinFile[0])
                 self.size_hex = bytes.fromhex(
                                             "{0:08X}".format(self._size)
                                             ).hex(" ",1).upper()
-                with open(self.file[0],'rb') as f:
+                with open(self.BinFile[0],'rb') as f:
                     data = f.read()
                     hash = crc8.crc8()
                     hash.update(data)
@@ -961,6 +1021,15 @@ class MainApp(QMainWindow):
                 error.exception(e)
                 msg = f"{datetime.now()} : Client==> {e}"
                 self.log_event(self.ui.listWidget_2,msg)
+    
+    def automate(self):
+        self.automateTask = not self.automateTask
+        self.ui.initiateButton.setText("Automate")
+        if(self.automateTask):
+            self.ui.initiateButton.setText("Manual")
+            self.send_command_flash()
+            
+
 
     def refresh_com_port_flash(self):
         '''
@@ -1130,7 +1199,14 @@ class MainApp(QMainWindow):
         listWidget.addItem(item)
         listWidget.scrollToItem(item)
 
-    @pyqtSlot(str)
+    def automate_logo_upload(self):
+        self.init = False
+        self.close()
+        self.connect()
+        time.sleep(0.1)
+        self.delete_images_from_board()
+
+    @pyqtSlot(tuple)
     def fileResponse(self,data):
         '''
         Qt slot Function triggered when a response is received 
@@ -1139,10 +1215,10 @@ class MainApp(QMainWindow):
         :param: data - str
         :return: None:
         '''
-        self.log_event(self.ui.listWidget_2,data)
+        self.log_event(self.ui.listWidget_2,data[0])
 
-    @pyqtSlot()
-    def fileFinished(self):
+    @pyqtSlot(tuple)
+    def fileFinished(self,msg):
         '''
         Qt slot function triggered after 
         the file transfer operation is complete 
@@ -1154,12 +1230,22 @@ class MainApp(QMainWindow):
         :param: None:
         :return: None:
         '''
-        msg = f"{datetime.now()} : Client==> Operation Done!"
-        self.log_event(self.ui.listWidget_2,msg)
+        # msg = f"{datetime.now()} : Client==> Operation Done!"
+        self.log_event(self.ui.listWidget_2,msg[0])
         self.ui.groupBox.setHidden(True)
         self.fileTransferGif.stop()
         self.ui.progressBar_2.setValue(0)
         self.ui.pushButton_18.setEnabled(True)
+        if msg[1] == SUCCESS:
+            # TODO - reconnect to port at 19200
+            self.playSound(get_path("./sounds/alert.wav"))
+            if self.automateTask:
+                self.automate_logo_upload()
+
+        else:
+            # TODO - retry
+            if self.automateTask:
+                pass
 
     @pyqtSlot(float)
     def fileProgress(self,sent):
@@ -1201,7 +1287,7 @@ class MainApp(QMainWindow):
         :return: None
         '''
         try:
-            worker = fileTransferWorker(self.serial,self.file[0],\
+            worker = fileTransferWorker(self.serial,self.BinFile[0],\
                                             self.delay,self.timeout,
                                                 self.chunksize)
             worker.signals.response.connect(self.fileResponse)
@@ -1225,9 +1311,19 @@ class MainApp(QMainWindow):
         '''
         msg = f"{datetime.now()} : Device==> {response}"
         self.log_event(self.ui.listWidget_2,msg)
-        if response == 'READY':
+        if response == READY:
             self.ui.pushButton_17.setEnabled(True)
             self.ui.pushButton_18.setEnabled(False)
+            if self.automateTask:
+                time.sleep(0.1)
+                self.send_file_worker()
+
+        elif response == TIMEOUT:
+            self.ui.pushButton_17.setEnabled(False)
+            self.ui.pushButton_18.setEnabled(False)
+            if self.automateTask:
+                time.sleep(0.3)
+                self.send_command_flash()
         else:
             self.ui.pushButton_17.setEnabled(False)
             self.ui.pushButton_18.setEnabled(False)
@@ -1254,6 +1350,7 @@ class MainApp(QMainWindow):
         msg = f"{datetime.now()} : Client==> Operation done!"
         self.log_event(self.ui.listWidget_2,msg)
         self.ui.pushButton_18.setEnabled(True)
+
 
     @pyqtSlot(object)
     def push_command_new_serial(self,ser):
@@ -1388,12 +1485,15 @@ class MainApp(QMainWindow):
         '''
         self.ports = []
         self.ui.comboBox_2.clear()
+        self.ui.comboBox_3.clear()
         self.ports = list(list_ports.comports())
         for port in self.ports:
             self.ui.comboBox_2.addItem(f"{port}")
+            self.ui.comboBox_3.addItem(f"{port}")
         if len(self.ports):
             self.selectedPort = str(self.ports[0]).split("-")[0].strip()
             self.ui.pushButton_2.setEnabled(True)
+            self.ui.pushButton_12.setEnabled(True)
 
     def disable_com_buttons(self,state):
         '''
@@ -1710,6 +1810,8 @@ class MainApp(QMainWindow):
         #     self.idx = idx_ref[0]
         #     self.ref = idx_ref[1]
         #     self.prepare_data_chunks()
+        self.logoFailedCount = 0
+        self.logoTransferCount = 0
         if self.ui.SelectImage.isVisible():
             self.prepare_data_chunks()
         elif len(self.ImagesBytesArray) > 0:
@@ -1719,8 +1821,13 @@ class MainApp(QMainWindow):
             self.bulkWorker.signals.progress.connect(self.overAllProgress)
             self.bulkWorker.signals.finished.connect(self.ImagesTransferDone)
             self.threadpool.start(self.bulkWorker)
+            self.ui.label_3.setText(f"Transferred 0 of {len(self.ImagesBytesArray)}")
             self.ui.overAllProgress.setHidden(False)
             self.ui.label_3.setHidden(False)
+
+    def playSound(self,file):
+        worker = WindowSoundWorker(file)
+        self.threadpool.start(worker)
 
     @pyqtSlot(tuple)
     def overAllProgress(self,image):
@@ -1732,15 +1839,54 @@ class MainApp(QMainWindow):
         self.ui.overAllProgress.setValue(image[1])
         self.ui.label_3.setText(f"Transferred {image[0]} of {image[2]}")
 
-    @pyqtSlot()
-    def ImagesTransferDone(self):
+    @pyqtSlot(str)
+    def ImagesTransferDone(self,success):
         self.ui.pushButton_7.setHidden(False)
+        if  self.bulkTransfer:
+            if isinstance(self.serial,serial.serialwin32.Serial) \
+                and self.serial.is_open \
+                and len(self.ImagesBytesArray) >0 :
+                self.ui.pushButton_7.setEnabled(True)
+            else:
+                self.ui.pushButton_7.setEnabled(False)
+        else:
+            if isinstance(self.serial,serial.serialwin32.Serial) \
+                    and self.file is not None \
+                    and self.serial.is_open \
+                    and len(self.bytesArray)>0 \
+                    and self.idx is not None \
+                    and self.ref is not None:
+                self.ui.pushButton_7.setEnabled(True) # image(s) load button
+            else:
+                self.ui.pushButton_7.setEnabled(False)
         self.ui.overAllProgress.setValue(0)
         self.ui.overAllProgress.setHidden(True)
         self.ui.label_2.setHidden(True)
-        msg = f"{datetime.now()} : Client==> Images Transferred!"
+        self.ui.label_3.setHidden(True)
+        msg = f"{datetime.now()} : Client==> Images Transfer {success}"
         self.logEvent(self.ui.listWidget,msg)
         self.set_file_associated_buttons(True)
+        if success == SUCCESS:
+            self.playSound(get_path("./sounds/alert.wav"))
+            if self.automateTask:
+                self.init = True
+                text = "Do you want to Continue?"
+                title = "Input Required!"
+                icon = QMessageBox.Question
+                buttons_options = QMessageBox.Yes | QMessageBox.No
+                dialogue = self.dialog(title,text,icon,buttons_options)
+                if dialogue == QMessageBox.Yes:
+                    self.send_command_flash()
+                else:
+                    self.automateTask = False
+                    self.ui.initiateButton.setText("Automate")
+        else:
+            self.playSound(get_path("./sounds/critical.wav"))
+            # text = f"Image(s) Transfer {success}"
+            # title = "Failed!"
+            # icon = QMessageBox.Critical
+            # buttons = QMessageBox.Ok
+            # self.dialog(title,text,icon,buttons)
 
     @pyqtSlot(tuple)
     def sendImage(self,ImageInfo):
@@ -1777,6 +1923,7 @@ class MainApp(QMainWindow):
         param: None:
         return: None:
         '''
+        self.isLogoCMD = True
         self.data_chunks = [ ]
         start = 0
         chunks = 0
@@ -1831,16 +1978,17 @@ class MainApp(QMainWindow):
         msg = f"{datetime.now()} : Client==> All Image(s) deleted!"
         self.logEvent(self.ui.listWidget,msg)
 
-    def selected_baud_rate(self):
+    def selected_baud_rate(self,comboBox):
         '''
         Updates Selected Baud Rate from the Combox
         '''
         try:
-            self.baudrate = int(self.ui.comboBox.currentText())
+            self.baudrate = int(comboBox.currentText())
         except Exception as e:
             error.exception(e)
             msg = f"{datetime.now()} : Client==> Error setting Baud Rate {e}"
             self.logEvent(self.ui.listWidget,msg)
+            self.logEvent(self.ui.listWidget_2,msg)
     
     def image_added_for_loading(self,image):
         '''
@@ -2027,6 +2175,71 @@ class MainApp(QMainWindow):
         worker.signals.error.connect(self.logo_convert_error)
         self.threadpool.start(worker)
 
+    def updateComButtonsOnConnect(self,state):
+        # DISABLE Buttons
+        # Image Load and Print tab
+        self.ui.pushButton_4.setEnabled(not state) # refresh
+        self.ui.pushButton_2.setEnabled(not state) # connect
+        # Flash Tab
+        self.ui.pushButton_15.setEnabled(not state) # refresh
+        self.ui.pushButton_12.setEnabled(not state) # connect
+
+        # ENABLE Buttons
+        # Image Load and Print Tab
+        self.ui.pushButton_6.setEnabled(state)   # Print image
+        self.ui.pushButton_11.setEnabled(state)  # delete board image(s)
+        self.ui.pushButton_8.setEnabled(state)   # push command
+        self.ui.pushButton_9.setEnabled(state)   # disconnect button
+        self.ui.selectCSV.setEnabled(state)      # csv button
+        self.ui.SelectImage.setEnabled(state)    # select image
+        self.ui.pushButton_10.setEnabled(state)  # clear console
+        self.ui.pushButton_3.setEnabled(state)   # set button
+        self.ui.isBulkTransferButton.setEnabled(state) 
+                                                 # bulk transfer toggle
+        self.ui.lineEdit.setEnabled(state)       # push command text field
+        # Flash Tab
+        self.ui.pushButton_13.setEnabled(state)  # set button
+        self.ui.pushButton_19.setEnabled(state)  # clear console
+        self.ui.pushButton_14.setEnabled(state)  # disconnect button
+        self.ui.pushButton_16.setEnabled(state)  # bin file selection
+
+
+    def updateComButtonsOnDisconnect(self,state):
+        # disable:
+        # ImageLoad and Print Tab
+        self.ui.pushButton_11.setEnabled(state)  # delete board image(s)
+        self.ui.pushButton_7.setEnabled(state)   # load image(s)
+        self.ui.pushButton_6.setEnabled(state)   # print image
+        self.ui.pushButton_8.setEnabled(state)   # push Command
+        self.ui.pushButton_3.setEnabled(state)   # Set Baud Rate
+        self.ui.pushButton_2.setEnabled(state)   # connect
+        self.ui.pushButton_9.setEnabled(state)   # disconnect
+        self.ui.selectCSV.setEnabled(state)      # csv button
+        self.ui.pushButton_10.setEnabled(state)  # clear console
+        self.ui.lineEdit.setEnabled(state)       # push command text field
+        # Flash Tab
+        self.ui.pushButton_17.setEnabled(state)  # Send bin file
+        self.ui.pushButton_18.setEnabled(state)  # firmware update mode
+        self.ui.pushButton_13.setEnabled(state)  # set baud rate
+        self.ui.pushButton_12.setEnabled(state)  # connect
+        self.ui.pushButton_14.setEnabled(state)  # disconnect
+        self.ui.pushButton_16.setEnabled(state)  # bin file selection
+        self.ui.pushButton_19.setEnabled(state)  # clear console
+
+        #enable:
+        # ImageLoad and Print tab
+        self.ui.pushButton_4.setEnabled(not state)  
+                                                 # refresh
+        # Flash Tab
+        self.ui.pushButton_15.setEnabled(not state)  
+                                                 # refresh
+        self.ui.label_3.setHidden(True)          # overall images Progress label
+        self.ui.label_2.setHidden(True)          # image progress label
+        self.ui.progressBar.setHidden(True)      # image progressbar
+        self.ui.progressBar.setValue(0)     
+        self.ui.overAllProgress.setHidden(True)  # overall images progresssbar
+        self.ui.overAllProgress.setValue(0)
+
     @pyqtSlot(object)
     def serial_com_error(self,err):
         '''
@@ -2067,17 +2280,17 @@ class MainApp(QMainWindow):
         except Exception as e:
             msg = f"{datetime.now()} : Client==> Unable to connect on Port {self.selectedPort} {e}"
             self.logEvent(self.ui.listWidget,msg)
-            self.ui.pushButton_2.setEnabled(True)
-            self.ui.pushButton_9.setEnabled(False)
-            self.ui.pushButton_4.setEnabled(True)
+            self.updateComButtonsOnConnect(False)
             error.exception(e)
         else:
             self.update_baud_rates(self.ui.comboBox,self.serial)
+            self.update_baud_rates(self.ui.comboBox_4,self.serial)
             msg = f"{datetime.now()} : Client==> Connected to Port {self.selectedPort}"
             self.logEvent(self.ui.listWidget,msg)
-            #self.ui.pushButton_3.setEnabled(True)
-            self.ui.pushButton_2.setEnabled(False)
-            self.ui.pushButton_4.setEnabled(False)
+            self.logEvent(self.ui.listWidget_2,msg)
+            self.updateComButtonsOnConnect(True)
+            self.config_baud_rate(True)
+            self.serial.flush()
     
     def close(self):
         '''
@@ -2090,11 +2303,17 @@ class MainApp(QMainWindow):
             error.exception(e)
             msg = f"{datetime.now()} : Client==> Error Disconnecting {self.selectedPort} - Error : {e}"
             self.logEvent(self.ui.listWidget,msg)
+            self.logEvent(self.ui.listWidget_2,msg)
         else:
             msg = f"{datetime.now()} : Client==> Port {self.selectedPort} disconnected!"
             self.logEvent(self.ui.listWidget,msg)
-            self.disable_com_buttons(False)
-            self.ui.pushButton_4.setEnabled(True)
+            self.logEvent(self.ui.listWidget_2,msg)
+            self.updateComButtonsOnDisconnect(False)
+
+            self.ui.groupBox.setHidden(True)
+            self.fileTransferGif.stop()
+            self.ui.progressBar_2.setValue(0)
+            # self.ui.pushButton_12.setEnabled(False)
 
     def connect_to_com_port(self):
         '''
@@ -2115,6 +2334,7 @@ class MainApp(QMainWindow):
         # Delete Command
         cmd = "1C 60 54 52 49 4F 58"
         self.ui.lineEdit.setText(cmd)
+        self.isDeleteCMD = True
         text = "Do you want to delete All Images?"
         title = "Deletion!"
         icon = QMessageBox.Question
@@ -2127,7 +2347,7 @@ class MainApp(QMainWindow):
             pass
         self.set_cmd_buttons(False)
         
-    def config_baud_rate(self):
+    def config_baud_rate(self,default=False):
         '''
         Configures Baud Rate on the Connected COM port
         Enables & Disables UI buttons after setting up Baud Rate
@@ -2147,21 +2367,38 @@ class MainApp(QMainWindow):
         self.serial.baudrate = self.baudrate 
         msg = f"{datetime.now()} : Client==> BaudRate Set to {self.serial.baudrate}"
         self.logEvent(self.ui.listWidget,msg)
+        self.logEvent(self.ui.listWidget_2,msg)
 
-        self.disable_com_buttons(True)
-        self.ui.pushButton_2.setEnabled(False) # connect button
-        self.ui.pushButton_3.setEnabled(False) # baud rate set button
-        if self.file is not None:
-            self.set_file_associated_buttons(True)
-            if self.serial is not None:
-                if self.serial.is_open:
-                    if len(self.bytesArray)>0 and self.idx is not None and self.ref is not None:
-                        self.ui.pushButton_7.setEnabled(True) # image load button
-                    else:
-                        self.ui.pushButton_7.setEnabled(False) # load button
+        # self.disable_com_buttons(True)
+        if not default:
+            self.ui.pushButton_3.setEnabled(False) # logo baud set
+            self.ui.pushButton_13.setEnabled(False) # flash baud set
+
+        if self.bulkTransfer:
+            if isinstance(self.serial,serial.serialwin32.Serial) \
+                and self.serial.is_open \
+                and len(self.ImagesBytesArray) >0 :
+                self.ui.pushButton_7.setEnabled(True)
+            else:
+                self.ui.pushButton_7.setEnabled(False)
         else:
-            self.set_file_associated_buttons(False)
-            self.ui.pushButton_7.setEnabled(False)
+            if isinstance(self.serial,serial.serialwin32.Serial) \
+                    and self.file is not None \
+                    and self.serial.is_open \
+                    and len(self.bytesArray)>0 \
+                    and self.idx is not None \
+                    and self.ref is not None:
+                self.ui.pushButton_7.setEnabled(True) # image(s) load button
+            else:
+                self.ui.pushButton_7.setEnabled(False)
+
+        if isinstance(self.serial,serial.serialwin32.Serial) \
+            and self.serial.is_open \
+            and self.BinFile is not None:
+            self.ui.pushButton_18.setEnabled(True) # firmware update mode
+        else:
+            self.ui.pushButton_18.setEnabled(False) # firmware update mode
+
 
     def logEvent(self,listWidget,msg):
         '''
@@ -2191,6 +2428,7 @@ class MainApp(QMainWindow):
         self.selectedPort = str(self.ports[index]).split("-")[0].strip()
         msg = f"{datetime.now()} : Client==> Port Selected {self.selectedPort}"
         self.logEvent(self.ui.listWidget,msg) 
+        self.logEvent(self.ui.listWidget_2,msg) 
 
     def update_baud_rates(self,comboBox,serial):
         '''
@@ -2201,9 +2439,12 @@ class MainApp(QMainWindow):
         comboBox.clear()
         for baud in serial.BAUDRATES:
             comboBox.addItem(f"{baud}")
-        self.baudrate = 19200 #int(comboBox.currentText())
-        self.ui.comboBox.setCurrentText("19200") # new line
-        self.config_baud_rate()
+        if self.init:
+            self.baudrate = self.flashBaudRate #int(comboBox.currentText())
+        else:
+            self.baudrate = self.logoBaudRate
+        comboBox.setCurrentText(f"{self.baudrate}") # new line
+        
         
     @pyqtSlot(tuple)
     def fileChunkTransferStatus(self,data):
@@ -2222,9 +2463,19 @@ class MainApp(QMainWindow):
         '''
         msg = f"{datetime.now()} : Client==> Error Sending " + str(data[0]) + f" Error: {data[1]}"
         self.logEvent(self.ui.listWidget,msg)
+        if self.isLogoCMD:
+            self.isLogoCMD = False
+            if self.automateTask:
+                time.sleep(0.1)
+                self.bulk_img_transfer()
+        elif self.isDeleteCMD:
+            self.isDeleteCMD = False
+            if self.automateTask:
+                time.sleep(0.3)
+                self.delete_images_from_board()
         
-    @pyqtSlot()
-    def fileTranserComplete(self):
+    @pyqtSlot(str)
+    def fileTranserComplete(self,success):
         '''
         Qt Slot function triggered after the file operation is complete
         Enables following buttons:
@@ -2234,11 +2485,10 @@ class MainApp(QMainWindow):
             4. Load Image to Board ( if image is selected )
         Hide Progress bar and sets it value to 0
         '''
-        msg = f"{datetime.now()} : Client==> Done!"
-        if not self.ui.SelectImage.isVisible():
-            self.bulkWorker.wake()
-        self.logEvent(self.ui.listWidget,msg)
+        msg = f"{datetime.now()} : Client==> Done! {success}"
         
+        self.logEvent(self.ui.listWidget,msg)
+        self.isLogoCMD = False
         self.ui.progressBar.setHidden(True)
         self.ui.label_2.setHidden(True)
         self.ui.progressBar.setValue(0)
@@ -2248,19 +2498,45 @@ class MainApp(QMainWindow):
             pass
         else:
             self.ui.pushButton_7.setEnabled(False)
+        
+        if success == SUCCESS:
+            if not self.ui.SelectImage.isVisible():
+                self.bulkWorker.wake()
+        else:
+            if not self.ui.SelectImage.isVisible():
+                self.bulkWorker.fail()
+                self.bulkWorker.wake()
+            
 
     @pyqtSlot(tuple)
     def response(self,data):
         '''
         Response received from MCU after CMD or one Image Chunk is sent
-        param: data - tuple (msg (str), msg(str) , int ( 0 or file % sent) )
+        param: data - tuple (msg (str), status msg(str) , int ( 0 or file % sent) )
         return: None
         '''        
         self.logEvent(self.ui.listWidget,data[0])
         # update progress bar
-        if data[2]>0:
+        if (self.isLogoCMD and data[1] == CHUNK_SUCCESS and data[2] > 0 ):
             self.pbar = self.pbar + ceil(data[2]/len(self.bytesArray)*100)
             self.ui.progressBar.setValue(self.pbar)
+        elif self.isLogoCMD and data[1] != CHUNK_SUCCESS:
+            if self.automateTask:
+                time.sleep(0.1)
+                self.bulk_img_transfer()
+        elif self.isDeleteCMD and data[1] == DELETE_ACK:
+            self.isDeleteCMD = False
+            if self.automateTask:
+                time.sleep(0.1)
+                self.bulk_img_transfer()
+
+        elif self.isDeleteCMD and data[1] == TIMEOUT:
+            self.isDeleteCMD = False
+            if self.automateTask:
+                time.sleep(0.3)
+                self.delete_images_from_board()
+        self.isDeleteCMD = False
+        
 
     def send_logo_to_board(self):
         '''
@@ -2293,6 +2569,9 @@ class MainApp(QMainWindow):
         '''
         msg = f"{datetime.now()} : Client==> Done!"
         self.logEvent(self.ui.listWidget,msg)
+        self.isLogoCMD = False
+        self.isDeleteCMD = False
+        self.isManualCMD = False
 
     @pyqtSlot(tuple)
     def cmd_transfer_status(self,data):

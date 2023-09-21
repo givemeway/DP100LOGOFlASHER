@@ -6,7 +6,7 @@ a = Analysis(
     ['logo_flash_main.py'],
     pathex=[],
     binaries=[],
-    datas=[('logs','logs')],
+    datas=[('logs','logs'),('sounds','sounds')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},

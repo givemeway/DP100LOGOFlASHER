@@ -1,0 +1,3 @@
+2023-09-17 19:10:25,119:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-17 19:10:35,239:DEBUG:FileTransfer:Response False                                     received from MCU after the Chunk 1
+2023-09-17 19:10:35,239:DEBUG:FileTransfer:Response Timed Out for 906 Bytes Sent
