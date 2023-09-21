@@ -20,6 +20,8 @@ QApplication.setAttribute(QtCore.Qt.AA_UseHighDpiPixmaps)
 
 OK = "OK"
 TIMEOUT = "TIMEOUT"
+CMD = "CMD"
+MSG = "MSG"
 ERROR = "ERROR"
 SUCCESS ="SUCCESS"
 READY = "READY"
@@ -72,7 +74,7 @@ class ComWorkerFlash(QRunnable):
         
 class pushCommandSignals(QObject):
     error = pyqtSignal(tuple)
-    response = pyqtSignal(str)
+    response = pyqtSignal(tuple)
     finished = pyqtSignal()
     serial = pyqtSignal(object)
 
@@ -95,37 +97,39 @@ class pushCommand(QRunnable):
         try:
             sent = self.ser.write(bytes.fromhex(self.cmd))
             msg = f"Command | {self.cmd} | Length {str(sent)} Bytes |"
-            self.signals.response.emit(msg)
-            self.ser.flush() 
+            self.signals.response.emit((msg,MSG))
+            self.ser.flush()
+            time.sleep(0.1) 
             if self.ser.baudrate == 115200:
                 pass
             else:
                 self.ser.close()
+                print(self.port)
                 msg = f"Port {self.port} Closed"
-                self.signals.response.emit(msg)
+                self.signals.response.emit((msg,MSG))
                 self.serial_com()
                 msg = f"BaudRate set to {self.ser.baudrate}"
-                self.signals.response.emit(msg)
+                self.signals.response.emit((msg,MSG))
             msg = f"Awaiting MCU RESPONSE"
-            self.signals.response.emit(msg)
+            self.signals.response.emit((msg,MSG))
             ok = self.awaitResponse()
             if isinstance(ok,Exception):
                 msg = f"Something Went Wrong | {ok}"
-                self.signals.response.emit(msg)
+                self.signals.response.emit((msg,CMD))
             elif isinstance(ok,bytes):
                 response = ok.decode('ASCII')
                 if response == "READY":
                     msg = response
-                    self.signals.response.emit(msg)
+                    self.signals.response.emit((msg,CMD))
                 else:
                     msg = f"{response}"
-                    self.signals.response.emit(msg)
+                    self.signals.response.emit((msg,CMD))
             elif isinstance(ok,bool):
                 msg = "TIMEOUT"
-                self.signals.response.emit(msg)
+                self.signals.response.emit((msg,CMD))
             elif isinstance(ok,str):
                 msg = f"{ok} Aborting!"
-                self.signals.response.emit(msg)
+                self.signals.response.emit((msg,CMD))
         except Exception as e:
             error.exception(e)
             self.signals.error.emit(("Something Went Wrong",f"{e}"))
@@ -143,6 +147,8 @@ class pushCommand(QRunnable):
                                         timeout=0.1,write_timeout=self.timeout
                                     )
             self.signals.serial.emit(self.ser)
+            print(self.ser)
+            print(self.port)
         except serial.SerialException as serialException:
             error.exception(serialException)
             self.signals.error.emit(serialException)
@@ -341,14 +347,21 @@ class WindowSoundSignals(QObject):
     finished = pyqtSignal()
 
 class WindowSoundWorker(QRunnable):
-    def __init__(self,file):
+    def __init__(self,file=None,beep=None,beepTones=None):
         super().__init__()
         self.file = file
+        self.beep = beep
+        self.beepTones = beepTones
         self.signals = WindowSoundSignals()
         
     @pyqtSlot()
     def run(self):
-        winsound.PlaySound(self.file,winsound.SND_ALIAS)
+        if self.beep and self.beepTones:
+            for _ in range(self.beepTones):
+                winsound.Beep(440,1000)
+                time.sleep(0.2)
+        elif self.file:
+            winsound.PlaySound(self.file,winsound.SND_ALIAS)
         self.signals.finished.emit()
 
 
@@ -1238,14 +1251,17 @@ class MainApp(QMainWindow):
         self.ui.pushButton_18.setEnabled(True)
         if msg[1] == SUCCESS:
             # TODO - reconnect to port at 19200
-            self.playSound(get_path("./sounds/alert.wav"))
-            if self.automateTask:
-                self.automate_logo_upload()
+            self.playSound(file=get_path("./sounds/alert.wav"))
+            self.playSound(beep="beep",beepTones=1)
+            # if self.automateTask:
+            #     self.automate_logo_upload()
 
         else:
             # TODO - retry
-            if self.automateTask:
-                pass
+            # if self.automateTask:
+            #     pass
+            self.playSound(beep="beep",beepTones=3)
+            self.playSound(file=get_path("./sounds/critical.wav"))
 
     @pyqtSlot(float)
     def fileProgress(self,sent):
@@ -1301,32 +1317,38 @@ class MainApp(QMainWindow):
         except Exception as e:
             error.exception(e)
 
-    @pyqtSlot(str)
-    def push_command_response(self,response):
+    @pyqtSlot(tuple)
+    def push_command_response(self,data):
         '''
         Qt slot function triggered when a
         response is received after init command
         :param: response - str
         :return: None
         '''
+        response,cmd = data
         msg = f"{datetime.now()} : Device==> {response}"
         self.log_event(self.ui.listWidget_2,msg)
-        if response == READY:
+        if cmd == CMD and response == READY:
             self.ui.pushButton_17.setEnabled(True)
             self.ui.pushButton_18.setEnabled(False)
             if self.automateTask:
-                time.sleep(0.1)
+                time.sleep(1)
                 self.send_file_worker()
 
-        elif response == TIMEOUT:
+        # elif response == TIMEOUT:
+        #     self.ui.pushButton_17.setEnabled(False)
+        #     self.ui.pushButton_18.setEnabled(False)
+        #     if self.automateTask:
+        #         time.sleep(0.3)
+        #         self.send_command_flash()
+        elif cmd == CMD and response != READY:
             self.ui.pushButton_17.setEnabled(False)
             self.ui.pushButton_18.setEnabled(False)
-            if self.automateTask:
-                time.sleep(0.3)
-                self.send_command_flash()
-        else:
-            self.ui.pushButton_17.setEnabled(False)
-            self.ui.pushButton_18.setEnabled(False)
+           
+            self.automateTask = False
+            self.ui.initiateButton.setText("Automate")
+            self.playSound(beep="beep",beepTones=3)
+            self.playSound(file=get_path("./sounds/critical.wav"))
 
     @pyqtSlot(tuple)
     def push_command_error(self,err):
@@ -1361,7 +1383,7 @@ class MainApp(QMainWindow):
         :return: None
         '''
         self.serial = ser
-        msg = f"{datetime.now()} : Client==> Reconnected Port {self.selected_port} Ready!"
+        msg = f"{datetime.now()} : Client==> Reconnected Port {self.selectedPort} Ready!"
         self.log_event(self.ui.listWidget_2,msg)
 
     def send_command_flash(self):
@@ -1382,7 +1404,7 @@ class MainApp(QMainWindow):
         try:
             self.ui.pushButton_18.setEnabled(False)
             worker = pushCommand(self.serial,self.cmd_mode,\
-                                    self.selected_port
+                                    self.selectedPort
                                 )
             worker.signals.error.connect(self.push_command_error)
             worker.signals.finished.connect(self.push_command_finished)
@@ -1825,9 +1847,13 @@ class MainApp(QMainWindow):
             self.ui.overAllProgress.setHidden(False)
             self.ui.label_3.setHidden(False)
 
-    def playSound(self,file):
-        worker = WindowSoundWorker(file)
-        self.threadpool.start(worker)
+    def playSound(self,beep=None,file=None,beepTones=None):
+        if beep:
+            worker = WindowSoundWorker(beep=beep,beepTones=beepTones)
+            self.threadpool.start(worker)
+        elif file:
+            worker = WindowSoundWorker(file=file)
+            self.threadpool.start(worker)
 
     @pyqtSlot(tuple)
     def overAllProgress(self,image):
@@ -2289,7 +2315,7 @@ class MainApp(QMainWindow):
             self.logEvent(self.ui.listWidget,msg)
             self.logEvent(self.ui.listWidget_2,msg)
             self.updateComButtonsOnConnect(True)
-            self.config_baud_rate(True)
+            # self.config_baud_rate(True)
             self.serial.flush()
     
     def close(self):
@@ -2399,6 +2425,8 @@ class MainApp(QMainWindow):
         else:
             self.ui.pushButton_18.setEnabled(False) # firmware update mode
 
+        self.ui.comboBox.setCurrentText(f"{self.baudrate}")
+        self.ui.comboBox_4.setCurrentText(f"{self.baudrate}")
 
     def logEvent(self,listWidget,msg):
         '''
@@ -2439,11 +2467,11 @@ class MainApp(QMainWindow):
         comboBox.clear()
         for baud in serial.BAUDRATES:
             comboBox.addItem(f"{baud}")
-        if self.init:
-            self.baudrate = self.flashBaudRate #int(comboBox.currentText())
-        else:
-            self.baudrate = self.logoBaudRate
-        comboBox.setCurrentText(f"{self.baudrate}") # new line
+        # if self.init:
+        #     self.baudrate = self.flashBaudRate 
+        # else:
+        #     self.baudrate = self.logoBaudRate
+        # comboBox.setCurrentText(f"{self.baudrate}") # new line
         
         
     @pyqtSlot(tuple)
