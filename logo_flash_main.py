@@ -1299,7 +1299,7 @@ class MainApp(QMainWindow):
         self.ui.pushButton_18.setEnabled(True)
         if msg[1] == SUCCESS:
             # TODO - reconnect to port at 19200
-            self.playSound(file=get_path("./sounds/alert.wav"))
+            # self.playSound(file=get_path("./sounds/alert.wav"))
             self.playSound(beep="beep", beepTones=1)
             if self.automateTask:
                 self.automate_logo_upload()
@@ -1309,7 +1309,7 @@ class MainApp(QMainWindow):
             # if self.automateTask:
             #     pass
             self.playSound(beep="beep", beepTones=3)
-            self.playSound(file=get_path("./sounds/critical.wav"))
+            # self.playSound(file=get_path("./sounds/critical.wav"))
 
     @pyqtSlot(float)
     def fileProgress(self, sent):
