@@ -31,14 +31,14 @@ ERROR = "ERROR"
 SUCCESS = "SUCCESS"
 READY = "READY"
 FAIL = "FAIL"
-DELETE_ACK = "1C1600"
+DELETE_ACK = "1C6100"
 CHUNK_SUCCESS = "1C5100"
 CHUNK_LOGO_INDEX_UNAVAILABLE = "1C5101"
 CHUNK_LOGO_EXISTS = "1C5102"
 CHUNK_LOGO_INDEX_INVALID = "1C5103"
 CHUNK_LOGO_WRITE_ERROR = "1C5104"
 CHUNK_LOGO_GENERIC_ERROR = "1C5105"
-DELAY = 0.02
+DELAY = 0.01
 
 
 def get_path(file):
@@ -110,7 +110,7 @@ class pushCommand(QRunnable):
             msg = f"Command | {self.cmd} | Length {str(sent)} Bytes |"
             self.signals.response.emit((msg, MSG))
             self.ser.flush()
-            time.sleep(0.1)
+            # time.sleep(0.1)
             if self.ser.baudrate == 115200:
                 pass
             else:
@@ -843,6 +843,7 @@ class WriteWorker(QRunnable):
                 self.signals.response.emit((msg, TIMEOUT))
             elif isinstance(response, bytes):
                 response = response.hex().upper()
+                print(type(response))
                 sendCommand.debug(f"Response : {response} | Sent {self.data}")
                 msg = f"{datetime.now()} : Device==> Response : {response} | Sent {self.data}"
                 self.signals.response.emit((msg, response))
@@ -2386,7 +2387,6 @@ class MainApp(QMainWindow):
                 time.sleep(0.2)
                 self.delete_images_from_board()
                 self.fileTransferFlag = False
-                # self.bulk_img_transfer()
             if self.imagesTransferFlag and self.automateTask:
                 self.config_baud_rate()
                 self.imagesTransferFlag = False
@@ -2618,21 +2618,16 @@ class MainApp(QMainWindow):
         param: data - tuple (msg (str), status msg(str) , int ( 0 or file % sent) )
         return: None
         '''
-        print(data,"DeleteCMD: ", self.isDeleteCMD,"Delete ACK ",DELETE_ACK,"DATA ",data[1], "Condition: ",data[1] == DELETE_ACK,"Automation:",self.automateTask)
+
         self.logEvent(self.ui.listWidget, data[0])
-        self.logEvent(self.ui.listWidget, data[1])
         # update progress bar
         if (self.isLogoCMD and data[1] == CHUNK_SUCCESS and data[2] > 0):
             self.pbar = self.pbar + ceil(data[2]/len(self.bytesArray)*100)
             self.ui.progressBar.setValue(self.pbar)
         elif self.isLogoCMD and data[1] != CHUNK_SUCCESS:
             self.playSound(beep="beep", beepTones=1)
-            # if self.automateTask:
-            #     time.sleep(0.1)
-            #     self.bulk_img_transfer()
         elif self.isDeleteCMD and data[1] == DELETE_ACK:
             self.isDeleteCMD = False
-            print("bulk image transfer" , self.automateTask)
             if self.automateTask:
                 time.sleep(0.2)
                 self.bulk_img_transfer()

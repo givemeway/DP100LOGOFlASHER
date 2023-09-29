@@ -1,12 +1,12 @@
-2023-09-29 14:05:17,626:ERROR:error:ClearCommError failed (OSError(9, 'The handle is invalid.', None, 6))
+2023-09-29 15:27:27,809:ERROR:error:Attempting to use a port that is not open
 Traceback (most recent call last):
-  File "logo_flash_main.py", line 181, in awaitResponse
-    if self.ser.in_waiting > 0:
-  File "C:\Users\YEZHIK\miniconda3\envs\logoprinter\lib\site-packages\serial\serialwin32.py", line 259, in in_waiting
-    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
-serial.serialutil.SerialException: ClearCommError failed (OSError(9, 'The handle is invalid.', None, 6))
-2023-09-29 14:17:33,236:ERROR:error:'MainApp' object has no attribute 'threadPool'
+  File "logo_flash_main.py", line 109, in run
+    sent = self.ser.write(bytes.fromhex(self.cmd))
+  File "C:\Users\YEZHIK\miniconda3\envs\logoprinter\lib\site-packages\serial\serialwin32.py", line 306, in write
+    raise PortNotOpenError()
+serial.serialutil.PortNotOpenError: Attempting to use a port that is not open
+2023-09-29 15:44:52,382:ERROR:error:'MainApp' object has no attribute 'threadPool'
 Traceback (most recent call last):
-  File "logo_flash_main.py", line 998, in closeEvent
+  File "logo_flash_main.py", line 999, in closeEvent
     self.threadPool.clear()
 AttributeError: 'MainApp' object has no attribute 'threadPool'
