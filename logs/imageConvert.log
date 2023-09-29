@@ -1,0 +1,72 @@
+2023-09-29 14:04:53,992:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\0-APLAB.bmp
+2023-09-29 14:04:54,014:DEBUG:ImageConvert:height: 120 Width: 384
+2023-09-29 14:04:54,034:DEBUG:ImageConvert:Image Buffer Length 5760
+2023-09-29 14:04:54,061:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\1-BPCL Logo.bmp
+2023-09-29 14:04:54,062:DEBUG:ImageConvert:height: 208 Width: 384
+2023-09-29 14:04:54,095:DEBUG:ImageConvert:Image Buffer Length 9984
+2023-09-29 14:04:54,144:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\2-HPCL Logo.bmp
+2023-09-29 14:04:54,148:DEBUG:ImageConvert:height: 216 Width: 384
+2023-09-29 14:04:54,183:DEBUG:ImageConvert:Image Buffer Length 10368
+2023-09-29 14:04:54,231:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\3-IOCL Logo.bmp
+2023-09-29 14:04:54,232:DEBUG:ImageConvert:height: 208 Width: 384
+2023-09-29 14:04:54,266:DEBUG:ImageConvert:Image Buffer Length 9984
+2023-09-29 14:04:54,316:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\4-Shell logo.bmp
+2023-09-29 14:04:54,316:DEBUG:ImageConvert:height: 152 Width: 384
+2023-09-29 14:04:54,342:DEBUG:ImageConvert:Image Buffer Length 7296
+2023-09-29 14:04:54,382:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\5-E-Nayara Logo.bmp
+2023-09-29 14:04:54,383:DEBUG:ImageConvert:height: 184 Width: 384
+2023-09-29 14:04:54,413:DEBUG:ImageConvert:Image Buffer Length 8832
+2023-09-29 14:04:54,457:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\6-Reliance Logo.bmp
+2023-09-29 14:04:54,458:DEBUG:ImageConvert:height: 136 Width: 384
+2023-09-29 14:04:54,483:DEBUG:ImageConvert:Image Buffer Length 6528
+2023-09-29 14:04:54,528:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\7-L-HALDIA Logo.bmp
+2023-09-29 14:04:54,529:DEBUG:ImageConvert:height: 104 Width: 384
+2023-09-29 14:04:54,555:DEBUG:ImageConvert:Image Buffer Length 4992
+2023-09-29 14:04:54,603:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\8-Tokheim Logo_updated_quality.bmp
+2023-09-29 14:04:54,604:DEBUG:ImageConvert:height: 104 Width: 384
+2023-09-29 14:04:54,624:DEBUG:ImageConvert:Image Buffer Length 4992
+2023-09-29 14:04:54,653:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\9-DFS Logo.bmp
+2023-09-29 14:04:54,654:DEBUG:ImageConvert:height: 120 Width: 384
+2023-09-29 14:04:54,674:DEBUG:ImageConvert:Image Buffer Length 5760
+2023-09-29 14:04:54,719:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\91-C-Lanka IOC logo.bmp
+2023-09-29 14:04:54,721:DEBUG:ImageConvert:height: 208 Width: 384
+2023-09-29 14:04:54,757:DEBUG:ImageConvert:Image Buffer Length 9984
+2023-09-29 14:04:54,810:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\92-M-MRPL-HIQ logo.bmp
+2023-09-29 14:04:54,811:DEBUG:ImageConvert:height: 112 Width: 384
+2023-09-29 14:04:54,829:DEBUG:ImageConvert:Image Buffer Length 5376
+2023-09-29 14:10:51,224:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\0-APLAB.bmp
+2023-09-29 14:10:51,232:DEBUG:ImageConvert:height: 120 Width: 384
+2023-09-29 14:10:51,253:DEBUG:ImageConvert:Image Buffer Length 5760
+2023-09-29 14:10:51,281:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\1-BPCL Logo.bmp
+2023-09-29 14:10:51,289:DEBUG:ImageConvert:height: 208 Width: 384
+2023-09-29 14:10:51,326:DEBUG:ImageConvert:Image Buffer Length 9984
+2023-09-29 14:10:51,374:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\2-HPCL Logo.bmp
+2023-09-29 14:10:51,382:DEBUG:ImageConvert:height: 216 Width: 384
+2023-09-29 14:10:51,419:DEBUG:ImageConvert:Image Buffer Length 10368
+2023-09-29 14:10:51,467:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\3-IOCL Logo.bmp
+2023-09-29 14:10:51,475:DEBUG:ImageConvert:height: 208 Width: 384
+2023-09-29 14:10:51,509:DEBUG:ImageConvert:Image Buffer Length 9984
+2023-09-29 14:10:51,555:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\4-Shell logo.bmp
+2023-09-29 14:10:51,563:DEBUG:ImageConvert:height: 152 Width: 384
+2023-09-29 14:10:51,588:DEBUG:ImageConvert:Image Buffer Length 7296
+2023-09-29 14:10:51,625:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\5-E-Nayara Logo.bmp
+2023-09-29 14:10:51,633:DEBUG:ImageConvert:height: 184 Width: 384
+2023-09-29 14:10:51,663:DEBUG:ImageConvert:Image Buffer Length 8832
+2023-09-29 14:10:51,707:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\6-Reliance Logo.bmp
+2023-09-29 14:10:51,714:DEBUG:ImageConvert:height: 136 Width: 384
+2023-09-29 14:10:51,741:DEBUG:ImageConvert:Image Buffer Length 6528
+2023-09-29 14:10:51,794:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\7-L-HALDIA Logo.bmp
+2023-09-29 14:10:51,804:DEBUG:ImageConvert:height: 104 Width: 384
+2023-09-29 14:10:51,827:DEBUG:ImageConvert:Image Buffer Length 4992
+2023-09-29 14:10:51,866:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\8-Tokheim Logo_updated_quality.bmp
+2023-09-29 14:10:51,877:DEBUG:ImageConvert:height: 104 Width: 384
+2023-09-29 14:10:51,898:DEBUG:ImageConvert:Image Buffer Length 4992
+2023-09-29 14:10:51,930:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\9-DFS Logo.bmp
+2023-09-29 14:10:51,938:DEBUG:ImageConvert:height: 120 Width: 384
+2023-09-29 14:10:51,960:DEBUG:ImageConvert:Image Buffer Length 5760
+2023-09-29 14:10:51,999:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\91-C-Lanka IOC logo.bmp
+2023-09-29 14:10:52,007:DEBUG:ImageConvert:height: 208 Width: 384
+2023-09-29 14:10:52,045:DEBUG:ImageConvert:Image Buffer Length 9984
+2023-09-29 14:10:52,097:DEBUG:ImageConvert:C:\Users\YEZHIK\Downloads\Dover Production LOGO APP (3)\Dover Production LOGO APP\logo_print_main\LOGO Generator\92-M-MRPL-HIQ logo.bmp
+2023-09-29 14:10:52,106:DEBUG:ImageConvert:height: 112 Width: 384
+2023-09-29 14:10:52,124:DEBUG:ImageConvert:Image Buffer Length 5376

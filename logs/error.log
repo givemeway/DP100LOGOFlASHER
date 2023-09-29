@@ -1,5 +1,12 @@
-2023-09-21 15:09:27,960:ERROR:error:'NoneType' object has no attribute 'close'
+2023-09-29 14:05:17,626:ERROR:error:ClearCommError failed (OSError(9, 'The handle is invalid.', None, 6))
 Traceback (most recent call last):
-  File "logo_flash_main.py", line 945, in closeEvent
-    self.serial.close()
-AttributeError: 'NoneType' object has no attribute 'close'
+  File "logo_flash_main.py", line 181, in awaitResponse
+    if self.ser.in_waiting > 0:
+  File "C:\Users\YEZHIK\miniconda3\envs\logoprinter\lib\site-packages\serial\serialwin32.py", line 259, in in_waiting
+    raise SerialException("ClearCommError failed ({!r})".format(ctypes.WinError()))
+serial.serialutil.SerialException: ClearCommError failed (OSError(9, 'The handle is invalid.', None, 6))
+2023-09-29 14:17:33,236:ERROR:error:'MainApp' object has no attribute 'threadPool'
+Traceback (most recent call last):
+  File "logo_flash_main.py", line 998, in closeEvent
+    self.threadPool.clear()
+AttributeError: 'MainApp' object has no attribute 'threadPool'
