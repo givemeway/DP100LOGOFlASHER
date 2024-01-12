@@ -600,7 +600,7 @@ class LogoCreatorSignals(QObject):
 
 
 class LogoCreatorWorker(QRunnable):
-    def __init__(self, path=None, max_width=384):
+    def __init__(self, path=None, max_width=1000):
         super().__init__()
         self.path = path
         self.max_width = max_width
@@ -923,7 +923,7 @@ class MainApp(QMainWindow):
         self.bytesArray = []
         self.data_chunks = []
         self.ImagesBytesArray = []
-        self.max_width = 384
+        self.max_width = 1000
         self.chunk_size = 896
         self.bulkTransfer = True
 
