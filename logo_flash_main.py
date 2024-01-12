@@ -31,13 +31,14 @@ ERROR = "ERROR"
 SUCCESS = "SUCCESS"
 READY = "READY"
 FAIL = "FAIL"
-DELETE_ACK = "1C1600"
+DELETE_ACK = "1C6100"
 CHUNK_SUCCESS = "1C5100"
 CHUNK_LOGO_INDEX_UNAVAILABLE = "1C5101"
 CHUNK_LOGO_EXISTS = "1C5102"
 CHUNK_LOGO_INDEX_INVALID = "1C5103"
 CHUNK_LOGO_WRITE_ERROR = "1C5104"
 CHUNK_LOGO_GENERIC_ERROR = "1C5105"
+DELAY = 0.01
 
 
 def get_path(file):
@@ -109,7 +110,7 @@ class pushCommand(QRunnable):
             msg = f"Command | {self.cmd} | Length {str(sent)} Bytes |"
             self.signals.response.emit((msg, MSG))
             self.ser.flush()
-            time.sleep(0.1)
+            # time.sleep(0.1)
             if self.ser.baudrate == 115200:
                 pass
             else:
@@ -184,7 +185,7 @@ class pushCommand(QRunnable):
                             return buffer
                 else:
                     break
-                time.sleep(0.05)
+                time.sleep(DELAY)
                 if self.timeout:
                     if (time.time() - start) > self.timeout:
                         return True
@@ -346,7 +347,7 @@ class File:
                             return buffer
                 else:
                     break
-                time.sleep(0.05)
+                time.sleep(DELAY)
                 if self.timeout:
                     if (time.time() - start) > self.timeout:
                         return True
@@ -719,7 +720,7 @@ class PrinterWorker(QRunnable):
                     buffer = self.serial_obj.read(50)
                     if len(buffer):
                         return buffer
-                time.sleep(0.05)
+                time.sleep(DELAY)
                 if (time.time() - start) > self.timeout:
                     return False
         except Exception as e:
@@ -842,6 +843,7 @@ class WriteWorker(QRunnable):
                 self.signals.response.emit((msg, TIMEOUT))
             elif isinstance(response, bytes):
                 response = response.hex().upper()
+                print(type(response))
                 sendCommand.debug(f"Response : {response} | Sent {self.data}")
                 msg = f"{datetime.now()} : Device==> Response : {response} | Sent {self.data}"
                 self.signals.response.emit((msg, response))
@@ -863,7 +865,7 @@ class WriteWorker(QRunnable):
                     buffer = self.serial_obj.read(50)
                     if len(buffer):
                         return buffer
-                time.sleep(0.05)
+                time.sleep(DELAY)
                 if (time.time() - start) > self.timeout:
                     return False
         except Exception as e:
@@ -973,6 +975,8 @@ class MainApp(QMainWindow):
         self.isLogoCMD = False
         self.isManualCMD = False
         self.firstBaudRateChosen = None
+        self.fileTransferFlag = False
+        self.imagesTransferFlag = False
 
         self.fileTransferGif = QMovie(":/gifs/gifs/Blocks-1s-31px.gif")
         self.ui.label.setMovie(self.fileTransferGif)
@@ -1262,10 +1266,14 @@ class MainApp(QMainWindow):
 
     def automate_logo_upload(self):
         self.init = False
+        self.fileTransferFlag = True
         self.close()
-        self.connect()
-        time.sleep(0.1)
-        self.delete_images_from_board()
+        self.baudrate = 19200
+        self.connect_to_com_port()
+        # self.baudrate = 19200
+        # self.config_baud_rate()
+        # time.sleep(0.2)
+        # self.delete_images_from_board()
 
     @pyqtSlot(tuple)
     def fileResponse(self, data):
@@ -1302,6 +1310,7 @@ class MainApp(QMainWindow):
             # self.playSound(file=get_path("./sounds/alert.wav"))
             self.playSound(beep="beep", beepTones=1)
             if self.automateTask:
+                self.ui.tabWidget.setCurrentIndex(0)
                 self.automate_logo_upload()
 
         else:
@@ -1942,13 +1951,15 @@ class MainApp(QMainWindow):
         self.logEvent(self.ui.listWidget, msg)
         self.set_file_associated_buttons(True)
         if success == SUCCESS:
-            self.playSound(get_path("./sounds/alert.wav"))
+            # self.playSound(get_path("./sounds/alert.wav"))
+            self.playSound(beep="beep",beepTones=1)
             if self.automateTask:
                 self.init = True
+                self.imagesTransferFlag = True
                 self.close()
-                self.connect()
                 self.baudrate = self.firstBaudRateChosen
-                self.config_baud_rate()
+                self.connect_to_com_port()
+                self.ui.tabWidget.setCurrentIndex(1)
                 text = "Do you want to Continue?"
                 title = "Input Required!"
                 icon = QMessageBox.Question
@@ -2371,6 +2382,15 @@ class MainApp(QMainWindow):
             self.logEvent(self.ui.listWidget_2, msg)
             self.updateComButtonsOnConnect(True)
             # self.config_baud_rate(True)
+            if self.fileTransferFlag and self.automateTask:
+                self.config_baud_rate()
+                time.sleep(0.2)
+                self.delete_images_from_board()
+                self.fileTransferFlag = False
+            if self.imagesTransferFlag and self.automateTask:
+                self.config_baud_rate()
+                self.imagesTransferFlag = False
+
             self.serial.flush()
 
     def close(self):
@@ -2598,6 +2618,7 @@ class MainApp(QMainWindow):
         param: data - tuple (msg (str), status msg(str) , int ( 0 or file % sent) )
         return: None
         '''
+
         self.logEvent(self.ui.listWidget, data[0])
         # update progress bar
         if (self.isLogoCMD and data[1] == CHUNK_SUCCESS and data[2] > 0):
@@ -2605,9 +2626,6 @@ class MainApp(QMainWindow):
             self.ui.progressBar.setValue(self.pbar)
         elif self.isLogoCMD and data[1] != CHUNK_SUCCESS:
             self.playSound(beep="beep", beepTones=1)
-            # if self.automateTask:
-            #     time.sleep(0.1)
-            #     self.bulk_img_transfer()
         elif self.isDeleteCMD and data[1] == DELETE_ACK:
             self.isDeleteCMD = False
             if self.automateTask:

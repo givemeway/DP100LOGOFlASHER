@@ -1,5 +1,12 @@
-2023-09-21 15:09:27,960:ERROR:error:'NoneType' object has no attribute 'close'
+2023-09-29 15:27:27,809:ERROR:error:Attempting to use a port that is not open
 Traceback (most recent call last):
-  File "logo_flash_main.py", line 945, in closeEvent
-    self.serial.close()
-AttributeError: 'NoneType' object has no attribute 'close'
+  File "logo_flash_main.py", line 109, in run
+    sent = self.ser.write(bytes.fromhex(self.cmd))
+  File "C:\Users\YEZHIK\miniconda3\envs\logoprinter\lib\site-packages\serial\serialwin32.py", line 306, in write
+    raise PortNotOpenError()
+serial.serialutil.PortNotOpenError: Attempting to use a port that is not open
+2023-09-29 15:44:52,382:ERROR:error:'MainApp' object has no attribute 'threadPool'
+Traceback (most recent call last):
+  File "logo_flash_main.py", line 999, in closeEvent
+    self.threadPool.clear()
+AttributeError: 'MainApp' object has no attribute 'threadPool'

@@ -1,0 +1,1605 @@
+2023-09-29 15:30:08,936:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:30:09,544:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:30:09,544:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:09,545:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:30:10,144:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:30:10,144:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:10,144:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:30:10,741:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:30:10,745:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:10,745:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:30:11,344:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:30:11,344:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:11,344:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:30:11,943:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:30:11,943:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:11,944:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:30:12,543:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:30:12,543:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:12,544:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:30:12,865:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:30:12,866:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:12,905:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:30:13,501:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:30:13,501:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:13,501:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:30:14,090:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:30:14,090:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:14,091:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:30:14,689:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:30:14,689:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:14,692:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:30:15,292:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:30:15,292:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:15,292:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:30:15,888:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:30:15,888:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:15,888:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:30:16,475:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:30:16,475:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:16,476:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:30:17,064:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:30:17,064:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:17,064:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:30:17,663:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:30:17,663:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:17,664:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:30:18,271:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:30:18,271:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:18,271:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:30:18,879:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:30:18,879:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:18,879:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:30:19,486:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:30:19,487:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:19,487:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:30:19,673:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:30:19,673:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:19,694:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:30:20,302:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:30:20,302:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:20,302:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:30:20,908:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:30:20,908:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:20,908:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:30:21,517:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:30:21,517:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:21,518:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:30:22,126:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:30:22,126:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:22,126:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:30:22,724:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:30:22,724:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:22,724:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:30:23,317:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:30:23,317:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:23,317:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:30:23,908:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:30:23,908:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:23,908:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:30:24,505:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:30:24,505:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:24,506:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:30:25,091:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:30:25,091:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:25,091:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:30:25,682:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:30:25,682:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:25,682:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:30:26,279:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:30:26,279:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:26,280:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:30:26,676:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:30:26,676:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:26,709:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:30:27,295:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:30:27,295:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:27,296:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:30:27,892:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:30:27,892:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:27,893:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:30:28,488:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:30:28,488:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:28,489:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:30:29,094:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:30:29,094:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:29,094:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:30:29,699:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:30:29,699:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:29,700:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:30:30,289:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:30:30,289:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:30,290:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:30:30,877:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:30:30,877:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:30,877:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:30:31,473:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:30:31,473:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:31,474:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:30:32,064:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:30:32,064:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:32,064:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:30:32,651:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:30:32,651:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:32,651:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:30:33,249:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:30:33,249:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:33,250:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:30:33,436:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:30:33,436:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:33,487:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:30:34,083:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:30:34,083:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:34,084:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:30:34,682:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:30:34,682:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:34,682:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:30:35,280:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:30:35,280:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:35,280:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:30:35,865:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:30:35,865:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:35,865:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:30:36,463:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:30:36,463:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:36,464:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:30:37,071:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:30:37,071:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:37,071:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:30:37,679:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:30:37,679:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:37,680:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:30:38,284:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:30:38,284:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:38,284:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:30:38,471:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:30:38,471:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:38,497:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:30:39,104:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:30:39,104:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:39,104:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:30:39,701:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:30:39,701:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:39,701:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:30:40,300:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:30:40,300:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:40,301:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:30:40,899:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:30:40,899:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:40,899:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:30:41,497:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:30:41,497:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:41,498:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:30:42,083:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:30:42,083:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:42,083:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:30:42,682:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:30:42,682:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:42,682:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:30:43,289:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:30:43,289:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:43,289:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:30:43,896:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:30:43,896:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:43,896:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:30:44,416:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:30:44,416:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:44,444:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:30:45,042:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:30:45,042:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:45,042:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:30:45,640:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:30:45,640:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:45,641:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:30:46,247:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:30:46,247:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:46,247:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:30:46,854:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:30:46,854:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:46,855:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:30:47,456:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:30:47,456:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:47,456:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:30:48,044:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:30:48,044:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:48,044:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:30:48,639:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:30:48,640:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:48,640:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:30:48,893:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:30:48,893:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:48,950:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:30:49,557:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:30:49,557:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:49,557:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:30:50,164:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:30:50,164:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:50,165:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:30:50,763:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:30:50,763:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:50,763:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:30:51,362:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:30:51,362:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:51,363:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:30:51,962:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:30:51,962:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:51,962:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:30:52,351:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:30:52,351:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:52,384:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:30:52,992:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:30:52,992:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:52,993:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:30:53,595:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:30:53,595:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:53,595:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:30:54,192:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:30:54,192:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:54,193:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:30:54,801:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:30:54,801:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:54,802:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:30:55,402:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:30:55,402:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:55,403:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:30:55,804:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:30:55,804:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:55,868:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:30:56,470:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:30:56,470:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:56,471:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:30:57,067:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:30:57,067:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:57,067:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:30:57,674:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:30:57,674:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:57,675:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:30:58,284:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:30:58,284:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:58,284:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:30:58,890:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:30:58,890:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:58,890:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:30:59,481:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:30:59,481:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:59,482:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:30:59,817:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:30:59,817:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:30:59,880:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:31:00,489:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:31:00,489:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:00,490:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:31:01,088:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:31:01,088:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:01,089:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:31:01,688:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:31:01,688:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:01,689:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:31:02,286:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:31:02,286:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:02,287:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:31:02,885:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:31:02,885:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:02,886:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:31:03,491:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:31:03,491:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:03,492:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:31:04,084:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:31:04,084:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:04,085:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:31:04,685:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:31:04,685:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:04,686:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:31:05,282:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:31:05,282:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:05,282:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:31:05,872:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:31:05,872:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:05,873:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:31:06,459:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:31:06,459:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:06,459:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:31:06,656:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:31:06,656:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:06,699:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:31:07,296:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:31:07,296:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:07,296:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:31:07,884:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:31:07,884:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:07,884:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:31:08,474:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:31:08,474:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:08,474:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:31:09,073:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:31:09,073:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:09,074:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:31:09,679:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:31:09,679:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:31:09,679:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:31:10,289:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:31:10,289:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:29,166:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:33:29,775:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:33:29,775:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:29,775:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:33:30,376:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:33:30,376:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:30,376:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:33:30,965:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:33:30,965:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:30,965:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:33:31,560:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:33:31,560:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:31,560:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:33:32,151:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:33:32,151:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:32,152:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:33:32,740:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:33:32,740:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:32,740:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:33:33,059:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:33:33,059:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:33,104:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:33:33,700:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:33:33,700:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:33,700:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:33:34,290:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:33:34,291:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:34,291:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:33:34,883:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:33:34,883:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:34,884:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:33:35,476:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:33:35,476:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:35,477:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:33:36,072:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:33:36,072:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:36,073:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:33:36,672:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:33:36,672:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:36,673:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:33:37,269:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:33:37,269:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:37,269:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:33:37,878:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:33:37,878:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:37,879:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:33:38,486:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:33:38,486:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:38,486:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:33:39,091:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:33:39,091:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:39,091:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:33:39,687:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:33:39,687:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:39,688:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:33:39,866:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:33:39,866:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:39,923:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:33:40,524:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:33:40,524:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:40,525:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:33:41,120:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:33:41,120:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:41,121:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:33:41,706:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:33:41,706:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:41,707:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:33:42,302:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:33:42,302:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:42,303:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:33:42,897:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:33:42,897:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:42,898:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:33:43,504:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:33:43,504:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:43,504:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:33:44,113:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:33:44,113:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:44,114:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:33:44,714:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:33:44,714:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:44,715:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:33:45,302:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:33:45,302:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:45,302:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:33:45,903:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:33:45,903:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:45,903:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:33:46,510:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:33:46,510:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:46,510:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:33:46,907:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:33:46,907:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:46,985:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:33:47,581:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:33:47,581:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:47,581:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:33:48,188:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:33:48,188:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:48,188:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:33:48,774:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:33:48,774:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:48,774:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:33:49,372:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:33:49,372:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:49,373:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:33:49,973:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:33:49,973:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:49,973:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:33:50,565:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:33:50,565:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:50,566:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:33:51,153:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:33:51,153:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:51,153:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:33:51,753:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:33:51,753:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:51,754:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:33:52,355:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:33:52,355:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:52,356:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:33:52,945:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:33:52,945:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:52,945:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:33:53,537:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:33:53,537:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:53,537:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:33:53,737:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:33:53,737:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:53,794:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:33:54,386:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:33:54,386:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:54,387:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:33:54,974:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:33:54,974:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:54,975:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:33:55,567:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:33:55,567:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:55,568:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:33:56,156:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:33:56,156:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:56,156:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:33:56,750:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:33:56,750:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:56,750:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:33:57,341:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:33:57,341:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:57,342:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:33:57,939:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:33:57,939:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:57,939:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:33:58,549:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:33:58,549:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:58,549:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:33:58,731:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:33:58,731:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:58,814:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:33:59,408:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:33:59,408:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:59,408:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:33:59,998:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:33:59,998:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:33:59,999:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:34:00,589:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:34:00,589:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:00,590:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:34:01,179:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:34:01,179:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:01,180:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:34:01,771:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:34:01,771:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:01,771:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:34:02,360:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:34:02,360:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:02,361:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:34:02,960:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:34:02,960:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:02,961:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:34:03,559:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:34:03,559:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:03,560:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:34:04,151:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:34:04,151:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:04,152:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:34:04,677:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:34:04,677:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:04,738:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:34:05,338:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:34:05,338:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:05,338:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:34:05,929:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:34:05,929:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:05,930:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:34:06,517:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:34:06,517:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:06,518:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:34:07,109:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:34:07,109:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:07,109:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:34:07,703:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:34:07,703:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:07,704:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:34:08,294:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:34:08,294:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:08,294:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:34:08,883:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:34:08,883:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:08,884:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:34:09,140:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:34:09,140:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:09,226:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:34:09,829:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:34:09,829:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:09,830:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:34:10,422:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:34:10,422:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:10,422:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:34:11,014:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:34:11,014:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:11,014:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:34:11,605:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:34:11,605:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:11,606:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:34:12,199:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:34:12,199:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:12,199:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:34:12,593:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:34:12,593:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:12,679:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:34:13,282:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:34:13,282:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:13,282:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:34:13,874:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:34:13,874:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:13,874:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:34:14,466:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:34:14,466:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:14,466:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:34:15,059:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:34:15,059:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:15,060:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:34:15,663:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:34:15,663:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:15,664:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:34:16,064:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:34:16,064:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:16,153:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:34:16,750:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:34:16,750:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:16,750:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:34:17,345:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:34:17,345:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:17,345:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:34:17,952:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:34:17,952:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:17,952:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:34:18,558:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:34:18,558:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:18,559:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:34:19,145:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:34:19,145:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:19,146:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:34:19,737:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:34:19,737:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:19,738:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:34:20,064:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:34:20,064:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:20,132:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:34:20,727:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:34:20,727:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:20,728:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:34:21,322:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:34:21,322:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:21,322:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:34:21,913:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:34:21,913:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:21,914:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:34:22,509:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:34:22,509:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:22,509:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:34:23,110:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:34:23,110:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:23,111:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:34:23,702:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:34:23,702:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:23,702:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:34:24,298:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:34:24,298:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:24,298:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:34:24,903:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:34:24,903:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:24,903:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:34:25,493:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:34:25,493:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:25,494:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:34:26,089:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:34:26,089:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:26,090:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:34:26,691:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:34:26,691:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:26,692:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:34:26,883:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:34:26,883:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:26,975:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:34:27,571:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:34:27,571:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:27,572:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:34:28,167:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:34:28,167:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:28,167:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:34:28,769:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:34:28,769:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:28,769:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:34:29,364:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:34:29,364:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:29,364:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:34:29,951:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:34:29,951:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:34:29,952:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:34:30,544:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:34:30,544:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:04,153:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:37:04,755:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:37:04,755:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:04,755:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:37:05,353:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:37:05,353:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:05,354:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:37:05,957:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:37:05,957:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:05,958:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:37:06,552:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:37:06,552:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:06,553:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:37:07,160:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:37:07,160:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:07,160:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:37:07,767:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:37:07,767:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:07,767:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:37:08,101:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:37:08,101:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:08,197:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:37:08,805:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:37:08,805:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:08,805:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:37:09,407:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:37:09,407:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:09,407:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:37:10,004:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:37:10,004:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:10,004:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:37:10,592:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:37:10,592:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:10,592:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:37:11,179:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:37:11,179:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:11,179:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:37:11,776:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:37:11,776:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:11,776:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:37:12,361:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:37:12,361:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:12,361:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:37:12,955:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:37:12,955:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:12,955:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:37:13,552:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:37:13,552:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:13,553:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:37:14,159:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:37:14,159:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:14,160:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:37:14,767:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:37:14,767:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:14,767:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:37:14,959:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:37:14,959:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:15,056:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:37:15,657:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:37:15,657:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:15,658:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:37:16,253:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:37:16,253:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:16,254:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:37:16,857:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:37:16,857:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:16,858:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:37:17,451:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:37:17,451:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:17,452:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:37:18,038:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:37:18,038:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:18,038:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:37:18,636:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:37:18,636:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:18,636:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:37:19,242:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:37:19,242:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:19,242:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:37:19,835:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:37:19,835:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:19,835:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:37:20,440:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:37:20,440:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:20,440:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:37:21,027:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:37:21,028:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:21,028:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:37:21,625:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:37:21,625:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:21,625:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:37:22,024:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:37:22,024:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:22,127:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:37:22,725:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:37:22,725:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:22,725:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:37:23,319:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:37:23,319:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:23,320:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:37:23,928:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:37:23,928:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:23,929:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:37:24,526:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:37:24,526:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:24,527:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:37:25,122:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:37:25,122:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:25,123:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:37:25,718:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:37:25,718:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:25,719:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:37:26,323:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:37:26,323:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:26,323:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:37:26,910:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:37:26,910:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:26,910:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:37:27,507:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:37:27,507:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:27,508:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:37:28,114:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:37:28,114:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:28,115:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:37:28,715:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:37:28,715:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:28,715:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:37:28,911:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:37:28,911:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:29,015:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:37:29,613:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:37:29,613:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:29,614:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:37:30,208:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:37:30,208:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:30,208:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:37:30,792:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:37:30,792:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:30,792:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:37:31,394:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:37:31,394:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:31,395:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:37:31,993:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:37:31,993:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:31,994:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:37:32,591:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:37:32,591:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:32,592:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:37:33,192:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:37:33,192:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:33,192:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:37:33,781:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:37:33,781:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:33,782:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:37:33,976:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:37:33,976:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:34,087:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:37:34,675:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:37:34,675:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:34,676:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:37:35,273:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:37:35,273:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:35,273:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:37:35,866:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:37:35,866:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:35,867:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:37:36,451:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:37:36,451:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:36,452:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:37:37,051:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:37:37,051:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:37,052:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:37:37,651:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:37:37,651:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:37,651:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:37:38,240:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:37:38,240:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:38,241:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:37:38,840:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:37:38,840:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:38,841:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:37:39,440:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:37:39,440:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:39,441:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:37:39,966:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:37:39,966:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:40,054:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:37:40,661:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:37:40,661:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:40,662:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:37:41,264:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:37:41,264:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:41,264:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:37:41,861:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:37:41,861:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:41,861:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:37:42,461:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:37:42,461:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:42,462:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:37:43,053:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:37:43,053:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:43,053:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:37:43,653:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:37:43,653:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:43,654:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:37:44,251:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:37:44,251:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:44,252:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:37:44,515:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:37:44,515:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:44,626:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:37:45,224:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:37:45,224:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:45,224:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:37:45,823:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:37:45,823:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:45,824:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:37:46,412:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:37:46,412:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:46,412:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:37:46,999:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:37:46,999:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:46,999:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:37:47,597:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:37:47,597:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:47,598:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:37:47,997:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:37:47,997:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:48,089:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:37:48,679:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:37:48,679:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:48,679:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:37:49,276:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:37:49,276:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:49,276:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:37:49,864:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:37:49,864:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:49,864:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:37:50,461:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:37:50,461:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:50,461:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:37:51,060:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:37:51,060:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:51,061:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:37:51,450:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:37:51,450:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:51,544:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:37:52,134:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:37:52,134:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:52,134:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:37:52,727:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:37:52,727:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:52,727:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:37:53,318:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:37:53,318:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:53,318:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:37:53,910:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:37:53,910:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:53,911:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:37:54,496:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:37:54,496:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:54,497:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:37:55,087:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:37:55,087:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:55,087:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:37:55,416:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:37:55,416:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:55,537:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:37:56,127:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:37:56,127:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:56,127:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:37:56,717:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:37:56,717:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:56,717:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:37:57,308:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:37:57,308:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:57,308:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:37:57,908:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:37:57,908:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:57,908:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:37:58,512:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:37:58,512:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:58,513:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:37:59,104:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:37:59,104:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:59,104:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:37:59,694:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:37:59,694:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:37:59,695:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:38:00,282:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:38:00,282:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:38:00,282:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:38:00,872:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:38:00,872:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:38:00,872:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:38:01,472:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:38:01,472:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:38:01,472:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:38:02,074:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:38:02,074:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:38:02,074:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:38:02,272:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:38:02,272:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:38:02,374:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:38:02,967:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:38:02,967:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:38:02,967:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:38:03,561:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:38:03,561:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:38:03,562:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:38:04,151:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:38:04,151:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:38:04,151:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:38:04,739:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:38:04,739:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:38:04,740:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:38:05,333:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:38:05,333:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:38:05,333:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:38:05,928:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:38:05,928:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:39:56,582:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:39:57,189:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:39:57,189:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:39:57,189:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:39:57,807:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:39:57,807:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:39:57,807:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:39:58,413:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:39:58,413:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:39:58,414:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:39:59,009:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:39:59,009:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:39:59,009:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:39:59,616:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:39:59,616:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:39:59,617:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:00,210:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:00,210:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:00,211:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:40:00,551:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:40:00,551:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:00,651:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:40:01,252:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:40:01,252:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:01,253:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:40:01,862:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:40:01,862:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:01,862:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:40:02,470:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:40:02,470:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:02,471:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:40:03,065:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:40:03,065:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:03,065:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:40:03,653:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:40:03,653:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:03,653:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:04,249:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:04,249:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:04,249:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:40:04,841:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:40:04,841:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:04,841:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:40:05,432:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:40:05,432:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:05,432:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:40:06,026:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:40:06,026:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:06,026:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:40:06,616:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:40:06,616:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:06,617:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:40:07,204:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:40:07,204:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:07,205:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:40:07,407:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:40:07,407:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:07,529:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:40:08,132:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:40:08,132:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:08,132:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:40:08,725:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:40:08,725:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:08,725:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:40:09,317:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:40:09,317:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:09,317:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:40:09,910:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:40:09,910:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:09,911:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:40:10,510:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:40:10,510:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:10,510:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:11,102:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:11,102:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:11,102:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:40:11,695:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:40:11,695:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:11,695:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:40:12,287:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:40:12,287:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:12,287:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:40:12,876:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:40:12,876:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:12,876:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:40:13,476:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:40:13,476:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:13,476:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:40:14,074:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:40:14,074:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:14,074:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:40:14,460:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:40:14,460:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:14,582:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:40:15,181:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:40:15,181:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:15,181:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:40:15,773:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:40:15,773:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:15,774:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:40:16,368:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:40:16,368:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:16,368:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:40:16,975:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:40:16,975:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:16,975:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:40:17,575:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:40:17,575:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:17,575:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:18,168:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:18,168:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:18,168:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:40:18,761:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:40:18,761:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:18,761:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:40:19,367:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:40:19,367:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:19,367:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:40:19,975:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:40:19,975:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:19,975:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:40:20,588:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:40:20,588:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:20,589:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:40:21,198:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:40:21,198:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:21,198:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:40:21,389:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:40:21,389:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:21,509:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:40:22,111:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:40:22,111:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:22,111:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:40:22,721:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:40:22,721:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:22,721:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:40:23,329:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:40:23,329:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:23,330:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:40:23,939:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:40:23,939:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:23,939:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:40:24,549:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:40:24,549:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:24,549:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:25,145:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:25,145:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:25,145:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:40:25,754:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:40:25,754:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:25,754:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:40:26,365:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:40:26,365:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:26,365:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:40:26,571:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:40:26,571:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:26,685:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:40:27,291:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:40:27,291:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:27,292:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:40:27,897:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:40:27,897:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:27,897:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:40:28,502:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:40:28,502:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:28,504:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:40:29,115:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:40:29,115:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:29,116:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:40:29,724:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:40:29,724:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:29,725:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:30,331:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:30,331:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:30,331:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:40:30,938:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:40:30,938:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:30,938:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:40:31,545:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:40:31,545:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:31,546:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:40:32,153:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:40:32,153:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:32,153:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:40:32,701:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:40:32,701:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:32,842:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:40:33,445:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:40:33,445:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:33,446:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:40:34,052:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:40:34,052:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:34,053:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:40:34,660:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:40:34,660:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:34,661:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:40:35,270:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:40:35,270:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:35,270:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:40:35,879:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:40:35,879:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:35,880:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:36,489:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:36,489:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:36,489:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:40:37,096:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:40:37,096:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:37,096:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:40:37,363:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:40:37,363:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:37,495:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:40:38,097:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:40:38,097:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:38,098:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:40:38,697:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:40:38,697:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:38,697:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:40:39,307:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:40:39,307:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:39,307:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:40:39,915:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:40:39,915:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:39,916:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:40:40,523:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:40:40,526:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:40,526:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:40,926:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:40,926:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:41,054:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:40:41,662:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:40:41,662:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:41,662:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:40:42,268:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:40:42,268:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:42,268:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:40:42,880:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:40:42,880:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:42,881:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:40:43,472:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:40:43,472:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:43,473:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:40:44,067:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:40:44,068:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:44,068:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:44,476:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:44,476:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:44,616:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:40:45,232:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:40:45,233:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:45,233:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:40:45,838:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:40:45,838:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:45,838:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:40:46,433:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:40:46,433:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:46,433:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:40:47,042:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:40:47,042:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:47,043:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:40:47,652:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:40:47,652:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:47,653:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:48,265:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:48,265:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:48,266:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:40:48,606:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:40:48,606:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:48,753:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:40:49,371:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:40:49,371:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:49,371:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:40:49,979:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:40:49,979:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:49,979:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:40:50,588:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:40:50,588:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:50,589:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:40:51,197:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:40:51,197:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:51,197:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:40:51,804:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:40:51,804:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:51,804:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:52,412:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:52,412:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:52,412:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:40:53,018:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:40:53,018:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:53,019:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:40:53,627:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:40:53,627:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:53,627:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:40:54,233:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:40:54,233:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:54,234:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:40:54,843:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:40:54,843:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:54,844:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:40:55,463:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:40:55,463:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:55,464:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:40:55,667:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:40:55,667:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:55,797:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:40:56,416:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:40:56,416:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:56,417:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:40:57,022:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:40:57,022:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:57,022:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:40:57,617:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:40:57,617:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:57,617:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:40:58,205:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:40:58,205:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:58,205:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:40:58,814:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:40:58,814:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:40:58,815:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:40:59,421:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:40:59,421:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:31,097:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:43:31,705:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:43:31,705:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:31,706:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:43:32,297:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:43:32,297:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:32,297:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:43:32,895:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:43:32,895:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:32,895:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:43:33,503:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:43:33,503:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:33,503:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:43:34,105:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:43:34,105:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:34,106:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:43:34,700:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:43:34,700:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:34,700:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:43:35,036:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:43:35,036:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:35,168:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:43:35,771:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:43:35,771:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:35,771:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:43:36,362:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:43:36,362:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:36,362:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:43:36,949:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:43:36,949:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:36,949:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:43:37,544:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:43:37,544:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:37,544:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:43:38,137:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:43:38,137:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:38,137:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:43:38,726:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:43:38,726:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:38,727:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:43:39,313:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:43:39,313:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:39,313:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:43:39,911:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:43:39,911:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:39,911:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:43:40,512:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:43:40,512:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:40,512:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:43:41,110:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:43:41,110:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:41,110:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:43:41,698:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:43:41,698:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:41,698:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:43:41,911:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:43:41,911:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:42,055:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:43:42,655:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:43:42,655:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:42,655:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:43:43,244:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:43:43,244:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:43,244:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:43:43,845:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:43:43,845:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:43,845:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:43:44,442:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:43:44,442:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:44,442:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:43:45,040:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:43:45,040:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:45,040:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:43:45,629:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:43:45,629:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:45,629:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:43:46,217:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:43:46,217:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:46,217:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:43:46,818:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:43:46,818:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:46,819:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:43:47,416:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:43:47,416:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:47,416:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:43:48,010:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:43:48,010:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:48,010:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:43:48,604:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:43:48,604:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:48,604:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:43:49,003:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:43:49,003:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:49,157:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:43:49,752:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:43:49,752:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:49,752:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:43:50,347:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:43:50,347:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:50,347:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:43:50,938:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:43:50,938:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:50,938:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:43:51,525:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:43:51,525:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:51,525:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:43:52,124:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:43:52,125:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:52,125:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:43:52,722:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:43:52,722:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:52,722:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:43:53,320:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:43:53,320:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:53,322:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:43:53,915:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:43:53,915:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:53,915:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:43:54,514:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:43:54,514:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:54,514:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:43:55,111:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:43:55,111:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:55,112:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:43:55,721:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:43:55,721:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:55,721:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:43:55,932:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:43:55,932:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:56,082:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:43:56,679:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:43:56,679:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:56,679:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:43:57,281:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:43:57,281:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:57,282:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:43:57,879:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:43:57,879:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:57,880:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:43:58,479:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:43:58,479:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:58,479:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:43:59,078:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:43:59,078:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:59,078:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:43:59,686:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:43:59,686:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:43:59,686:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:44:00,282:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:44:00,282:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:00,282:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:44:00,877:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:44:00,877:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:00,877:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:44:01,084:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:44:01,084:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:01,234:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:44:01,836:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:44:01,836:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:01,836:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:44:02,426:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:44:02,426:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:02,427:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:44:03,018:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:44:03,018:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:03,018:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:44:03,609:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:44:03,609:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:03,609:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:44:04,200:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:44:04,200:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:04,201:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:44:04,797:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:44:04,797:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:04,798:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:44:05,383:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:44:05,383:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:05,383:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:44:05,981:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:44:05,981:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:05,982:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:44:06,588:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:44:06,588:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:06,588:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:44:07,108:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:44:07,108:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:07,246:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:44:07,846:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:44:07,846:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:07,846:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:44:08,435:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:44:08,435:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:08,436:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:44:09,029:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:44:09,029:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:09,029:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:44:09,623:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:44:09,623:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:09,623:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:44:10,213:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:44:10,213:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:10,213:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:44:10,805:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:44:10,805:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:10,805:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:44:11,396:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:44:11,396:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:11,396:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:44:11,651:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:44:11,651:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:11,815:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:44:12,422:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:44:12,422:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:12,422:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:44:13,026:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:44:13,026:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:13,026:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:44:13,620:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:44:13,620:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:13,620:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:44:14,214:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:44:14,214:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:14,214:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:44:14,819:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:44:14,819:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:14,819:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:44:15,215:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:44:15,215:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:15,360:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:44:15,951:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:44:15,951:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:15,951:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:44:16,540:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:44:16,540:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:16,540:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:44:17,134:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:44:17,134:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:17,134:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:44:17,729:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:44:17,729:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:17,729:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:44:18,332:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:44:18,332:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:18,332:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:44:18,733:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:44:18,733:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:18,884:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:44:19,483:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:44:19,483:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:19,483:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:44:20,076:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:44:20,076:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:20,076:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:44:20,669:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:44:20,669:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:20,669:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:44:21,271:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:44:21,271:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:21,272:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:44:21,871:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:44:21,871:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:21,872:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:44:22,477:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:44:22,477:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:22,477:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:44:22,822:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:44:22,822:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:22,969:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:44:23,573:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:44:23,573:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:23,573:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:44:24,183:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:44:24,183:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:24,183:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:44:24,790:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:44:24,790:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:24,791:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:44:25,399:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:44:25,399:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:25,399:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:44:25,994:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:44:25,994:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:25,994:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:44:26,623:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:44:26,623:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:26,623:DEBUG:FileTransfer:Processing Chunk 7
+2023-09-29 15:44:27,232:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 7
+2023-09-29 15:44:27,232:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:27,233:DEBUG:FileTransfer:Processing Chunk 8
+2023-09-29 15:44:27,836:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 8
+2023-09-29 15:44:27,836:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:27,836:DEBUG:FileTransfer:Processing Chunk 9
+2023-09-29 15:44:28,443:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 9
+2023-09-29 15:44:28,443:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:28,443:DEBUG:FileTransfer:Processing Chunk 10
+2023-09-29 15:44:29,063:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 10
+2023-09-29 15:44:29,063:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:29,063:DEBUG:FileTransfer:Processing Chunk 11
+2023-09-29 15:44:29,671:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 11
+2023-09-29 15:44:29,671:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:29,671:DEBUG:FileTransfer:Processing Chunk 12
+2023-09-29 15:44:29,889:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 12
+2023-09-29 15:44:29,889:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:30,055:DEBUG:FileTransfer:Processing Chunk 1
+2023-09-29 15:44:30,669:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 1
+2023-09-29 15:44:30,669:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:30,669:DEBUG:FileTransfer:Processing Chunk 2
+2023-09-29 15:44:31,274:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 2
+2023-09-29 15:44:31,274:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:31,274:DEBUG:FileTransfer:Processing Chunk 3
+2023-09-29 15:44:31,881:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 3
+2023-09-29 15:44:31,881:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:31,882:DEBUG:FileTransfer:Processing Chunk 4
+2023-09-29 15:44:32,488:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 4
+2023-09-29 15:44:32,488:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:32,488:DEBUG:FileTransfer:Processing Chunk 5
+2023-09-29 15:44:33,097:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 5
+2023-09-29 15:44:33,097:DEBUG:FileTransfer:Response : 1C5100
+2023-09-29 15:44:33,097:DEBUG:FileTransfer:Processing Chunk 6
+2023-09-29 15:44:33,694:DEBUG:FileTransfer:Response b'\x1cQ\x00'                                     received from MCU after the Chunk 6
+2023-09-29 15:44:33,694:DEBUG:FileTransfer:Response : 1C5100
