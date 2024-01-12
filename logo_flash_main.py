@@ -601,7 +601,7 @@ class LogoCreatorSignals(QObject):
 
 
 class LogoCreatorWorker(QRunnable):
-    def __init__(self, path=None, max_width=1000):
+    def __init__(self, path=None, max_width=576):
         super().__init__()
         self.path = path
         self.max_width = max_width
@@ -925,7 +925,7 @@ class MainApp(QMainWindow):
         self.bytesArray = []
         self.data_chunks = []
         self.ImagesBytesArray = []
-        self.max_width = 1000
+        self.max_width = 576
         self.chunk_size = 896
         self.bulkTransfer = True
 
@@ -1952,7 +1952,7 @@ class MainApp(QMainWindow):
         self.set_file_associated_buttons(True)
         if success == SUCCESS:
             # self.playSound(get_path("./sounds/alert.wav"))
-            self.playSound(beep="beep",beepTones=1)
+            self.playSound(beep="beep", beepTones=1)
             if self.automateTask:
                 self.init = True
                 self.imagesTransferFlag = True
