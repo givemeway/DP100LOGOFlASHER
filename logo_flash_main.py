@@ -8,7 +8,7 @@ import sys
 import os
 import serial
 import time
-import crc8
+from crc import Calculator, Crc16
 from math import ceil
 from datetime import datetime
 from PIL import Image, ImageQt
@@ -228,16 +228,14 @@ class File:
             end_bytes = "3C 53 54 50"
             chunk_no = 1
             self.size = os.path.getsize(self.file)
+            calculator = Calculator(Crc16.MODBUS)
             with open(self.file, 'rb') as f:
                 while True:
                     data = f.read(self.chunk)
                     if len(data) > 0:
-                        hash = crc8.crc8()
-                        hash.update(data)
-                        _crc8 = int(hash.hexdigest(), 16)
-                        chunk_crc8 = bytes.fromhex(
-                            "{0:08X}".format(_crc8)
-                        ).hex(" ", 1).upper()
+                        crc16_checksum = calculator.checksum(data)
+                        chunk_crc16 = bytes.fromhex("{0:08X}".format(
+                            crc16_checksum)).hex(" ", 1).upper()
                         chunk_size = bytes.fromhex(
                             "{0:08X}".format(len(data))
                         ).hex(" ", 1).upper()
@@ -245,7 +243,7 @@ class File:
                             "{0:08X}".format(file_offset)
                         ).hex(" ", 1).upper()
                         fimware_data_command = init_bytes + file_offset_hex + \
-                            chunk_size + chunk_crc8 +\
+                            chunk_size + chunk_crc16 +\
                             data.hex(" ", 1).upper() + end_bytes
                         file_offset += self.chunk
 
@@ -981,9 +979,16 @@ class MainApp(QMainWindow):
         self.fileTransferGif = QMovie(":/gifs/gifs/Blocks-1s-31px.gif")
         self.ui.label.setMovie(self.fileTransferGif)
 
+        for i, argv in enumerate(sys.argv[1:]):
+            if (argv == "--max_width" or argv == "-w"):
+                self.max_width = sys.argv[1:][i+1]
+
+        print(self.max_width)
+
     #################################################################################
 
     ####################################################################################
+
     def closeEvent(self, event: QtGui.QCloseEvent) -> None:
         '''
         Function to prompt whether the app can be closed
@@ -1073,15 +1078,14 @@ class MainApp(QMainWindow):
                 self.size_hex = bytes.fromhex(
                     "{0:08X}".format(self._size)
                 ).hex(" ", 1).upper()
+                calculator = Calculator(Crc16.MODBUS)
                 with open(self.BinFile[0], 'rb') as f:
                     data = f.read()
-                    hash = crc8.crc8()
-                    hash.update(data)
-                    _crc8 = int(hash.hexdigest(), 16)
-                    _crc8 = bytes.fromhex(
-                        "{0:08X}".format(_crc8)
-                    ).hex(" ", 1).upper()
-                self.cmd_mode = f"46 57 3E {_crc8} {self.size_hex} 3C 53 54 50"
+                    crc16_checksum = calculator.checksum(data)
+                    chunk_crc16 = bytes.fromhex("{0:08X}".format(
+                        crc16_checksum)).hex(" ", 1).upper()
+
+                self.cmd_mode = f"46 57 3E {chunk_crc16} {self.size_hex} 3C 53 54 50"
 
                 self.ui.pushButton_18.setEnabled(True)
             except Exception as e:
